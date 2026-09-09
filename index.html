@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .hide-phone-number { clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%, 45% 82%, 0 82%); }
+</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#00210a", "secondary-fixed": "#ffdad7", "tertiary-fixed": "#95f8a7", "on-surface-variant": "#554336", "outline": "#887364", "surface-bright": "#fef9ee", "on-error-container": "#93000a", "background": "#fef9ee", "on-tertiary-fixed-variant": "#005323", "surface-tint": "#904d00", "primary-fixed": "#ffdcc3", "tertiary-fixed-dim": "#79db8d", "tertiary": "#006b2f", "surface-container-high": "#ede8dd", "surface-container-highest": "#e7e2d7", "primary-fixed-dim": "#ffb77d", "primary": "#8d4b00", "on-secondary": "#ffffff", "inverse-primary": "#ffb77d", "tertiary-container": "#1e8642", "surface-container-lowest": "#ffffff", "surface-container-low": "#f8f3e8", "surface-container": "#f2ede3", "error-container": "#ffdad6", "error": "#ba1a1a", "inverse-surface": "#323029", "secondary": "#a53936", "surface": "#fef9ee", "surface-dim": "#dedacf", "secondary-fixed-dim": "#ffb3ad", "on-secondary-container": "#721315", "outline-variant": "#dbc2b0", "on-primary-fixed": "#2f1500", "on-surface": "#1d1c15", "surface-variant": "#e7e2d7", "inverse-on-surface": "#f5f0e5", "on-secondary-fixed-variant": "#852221", "on-primary-container": "#fffbff", "on-background": "#1d1c15", "secondary-container": "#fe7c74", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#6e3900", "on-error": "#ffffff", "on-tertiary-container": "#f7fff3", "on-secondary-fixed": "#410004", "on-primary": "#ffffff", "primary-container": "#b15f00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "2rem", "space-md": "1rem", "space-3xl": "4.5rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "space-xl": "2rem", "max-width-content": "1200px", "space-2xs": "0.25rem", "space-2xl": "3rem", "gutter-mobile": "1rem" }, "fontFamily": { "display-lg-mobile": [ "Noto Serif" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Noto Serif" ], "body-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Noto Serif" ], "display-lg": [ "Noto Serif" ], "body-lg": [ "Plus Jakarta Sans" ], "label-lg": [ "Noto Serif" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Noto Serif" ], "headline-lg-mobile": [ "Noto Serif" ], "label-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-lg-mobile": [ "30px", { "lineHeight": "38px", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "42px", "fontWeight": "600" } ], "display-lg": [ "44px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-lg": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(180,83,9,0.08)]"><div class="bg-secondary text-on-secondary px-gutter-mobile md:px-gutter-desktop py-space-xs text-center"><div class="max-w-max-width-content mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-space-sm font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed"></span></span><span>महाभारत कालीन विश्व प्रसिद्ध सिद्धपीठ • नलखेड़ा (म.प्र.)</span></div><div class="hidden md:flex items-center gap-space-md"><span class="text-secondary-fixed">त्रिशूल-पीताम्बरा तंत्र पीठ</span><span>•</span><span>24x7 मुफ्त सलाह एवं संकल्प परामर्श</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px]">call</span><span class="font-label-md text-label-md tracking-wider">+91 87690 84789</span></div></div></div><div class="h-20 max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-[0_2px_10px_rgba(141,75,0,0.25)]"><span class="font-headline-md text-headline-md leading-none">ॐ</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">पंडित हर्षित शर्मा</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">मुख्य वैदिक पुरोहित, माँ बगलामुखी धाम नलखेड़ा</span></div></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a aria-current="page" class="transition-colors duration-200 text-primary font-bold border-b-2 border-primary pb-1" data-path="home" href="index.html">होम</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="services.html">सेवाएं</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="gallery.html">गैलरी</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="contact.html">संपर्क</a></nav>
+<button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none p-1">
+  <span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-surface-container absolute w-full left-0 top-full flex-col py-space-sm shadow-xl font-label-md text-label-md">
+  <a href="index.html" class="px-gutter-mobile py-space-sm text-primary font-bold bg-surface-container-low">होम</a>
+  <a href="services.html" class="px-gutter-mobile py-space-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low">सेवाएं</a>
+  <a href="gallery.html" class="px-gutter-mobile py-space-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low">गैलरी</a>
+  <a href="contact.html" class="px-gutter-mobile py-space-sm text-on-surface-variant hover:text-primary hover:bg-surface-container-low">संपर्क</a>
+</div>
+</header><main class="w-full pt-32 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden">
+<!-- Subtle divine halo background glow -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-0"></div>
+<div class="absolute -bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-0"></div>
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop py-space-2xl relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left Hero Column (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Sacred Pill Tag -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">flag</span>
+<span class="font-label-sm text-label-sm tracking-wide">विश्व प्रसिद्ध विशेष सिद्धपीठ • लखुंदर नदी तट, नलखेड़ा</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight leading-tight">
+            जीवन की हर समस्या के समाधान के लिए पंडित हर्षित शर्मा जी द्वारा कराएं विशेष पूजा और हवन
+          </h1>
+<!-- Subtitle / Narrative -->
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            माँ बगलामुखी धाम नलखेड़ा के मुख्य वैदिक पुरोहित एवं विशेषज्ञ पंडित हर्षित शर्मा जी द्वारा अपने नाम-गोत्र पर विधि-विधान से लाइव संकल्प एवं सात्विक वैदिक हवन सेवा। पीताम्बरा महामंत्र से समस्त रुकावटों, न्यायालय विवाद एवं गुप्त बाधाओं का सुनिश्चित समाधान।
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_16px_rgba(141,75,0,0.3)] hover:bg-primary-container transition-all transform hover:-translate-y-0.5" href="#anushthan-section">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>ऑनलाइन हवन संकल्प बुक करें</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-tertiary text-on-tertiary font-label-lg text-label-lg shadow-sm hover:bg-tertiary-container transition-all" href="https://wa.me/918769084789" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>पंडित जी से मुफ्त सलाह लें</span>
+</a>
+</div>
+<!-- Live Muhurat Strip -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-low text-on-surface-variant mt-space-2xs">
+<span class="flex h-3 w-3 relative shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">लाइव संकल्प जारी:</span>
+<span class="font-body-sm text-body-sm">आज का शुभ अमृत योग • अब तक 124+ भक्तों का नाम-गोत्र संकल्प पूर्ण</span>
+</div>
+</div>
+<!-- Right Hero Showcase Column (5 Cols) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-[0_12px_40px_-8px_rgba(141,75,0,0.22)] bg-white p-6 md:p-8 border border-surface-container-highest flex flex-col justify-center min-h-[420px] transform hover:scale-[1.02] transition-transform duration-500">
+  
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center gap-2">
+      <h3 class="text-[22px] font-bold text-gray-900 leading-none tracking-tight">baglarani_</h3>
+      <span class="material-symbols-outlined text-blue-500 text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="h-7 drop-shadow-sm">
+  </div>
+  
+  <div class="flex items-center gap-4 md:gap-6 mb-6">
+    <div class="w-20 h-20 md:w-24 md:h-24 rounded-full p-1 shrink-0 bg-gradient-to-tr from-yellow-400 via-orange-500 to-pink-600 shadow-md">
+      <div class="w-full h-full rounded-full border-[3px] border-white overflow-hidden bg-white">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1VrrW36AzC6tGz7T1UJJZI3kItz1A3DqkTIGUMR5jVgq6MQlAqwAEUnWH6iblNw-JUTvw1oGO5ZSeCk40106R5IyzzAbSPuQSFex7qOi7AyGtHoIMwsAQ2vkXO9xrvzWr66F-BctE8luFBUyhn7vzxXGG7rvNWq2cbLWVCfAqhYMzDnU8vBv3nbSxQRkS5xgrRBG_3PByF1adoTY1qsn2Xk7AJDyWt8IL4SLVhj1PNeT762wJ-O4ZkYRSA" class="w-full h-full object-cover" alt="Profile"/>
+      </div>
+    </div>
+    <div class="flex flex-1 justify-between text-center gap-2">
+      <div class="flex flex-col items-center">
+        <span class="font-bold text-gray-900 text-lg md:text-xl">629</span>
+        <span class="text-[13px] md:text-sm text-gray-600 font-medium">posts</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="font-bold text-gray-900 text-lg md:text-xl">95.3K</span>
+        <span class="text-[13px] md:text-sm text-gray-600 font-medium">followers</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="font-bold text-gray-900 text-lg md:text-xl">1</span>
+        <span class="text-[13px] md:text-sm text-gray-600 font-medium">following</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flex flex-col gap-1 mb-8">
+    <p class="font-bold text-gray-900 text-[15px]">Pandit harsh Sharma</p>
+    <p class="text-sm text-gray-500 font-medium">Hindu Temple</p>
+    <p class="text-sm text-gray-800 mt-2 leading-relaxed">
+      !! जय माँ बगलामुखी !! 🙇🏻‍♂️<br/>
+      मां बगलामुखी हवन पूजन अनुष्ठान के लिए संपर्क करे :- 8769084789 , 9165876908 ☎️
+    </p>
+  </div>
+
+  <div class="flex gap-3">
+    <a href="https://www.instagram.com/baglarani_/" target="_blank" class="flex-1 bg-[#0095f6] hover:bg-[#1877f2] text-white font-semibold py-2 rounded-xl text-center transition-colors shadow-sm shadow-blue-500/30">
+      Follow
+    </a>
+    <a href="https://www.instagram.com/baglarani_/" target="_blank" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold py-2 rounded-xl text-center transition-colors">
+      Message
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT PANDIT HARSHIT SHARMA -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<div class="flex flex-col md:flex-row items-center gap-space-2xl">
+<div class="w-full md:w-1/3">
+  <div class="w-full bg-white rounded-2xl shadow-md border border-surface-container-highest overflow-hidden transform hover:-translate-y-1 transition-all duration-300 group">
+    <!-- YouTube Banner -->
+    <div class="w-full h-28 md:h-32 bg-gray-100 relative overflow-hidden">
+      <img src="https://lh3.googleusercontent.com/aida/AEtjO1VrrW36AzC6tGz7T1UJJZI3kItz1A3DqkTIGUMR5jVgq6MQlAqwAEUnWH6iblNw-JUTvw1oGO5ZSeCk40106R5IyzzAbSPuQSFex7qOi7AyGtHoIMwsAQ2vkXO9xrvzWr66F-BctE8luFBUyhn7vzxXGG7rvNWq2cbLWVCfAqhYMzDnU8vBv3nbSxQRkS5xgrRBG_3PByF1adoTY1qsn2Xk7AJDyWt8IL4SLVhj1PNeT762wJ-O4ZkYRSA" alt="YouTube Banner" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+    </div>
+    
+    <!-- Profile & Info -->
+    <div class="px-4 pb-6">
+      <div class="flex flex-col items-center -mt-12 mb-3 relative z-10">
+        <div class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-white shadow-sm">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1VrrW36AzC6tGz7T1UJJZI3kItz1A3DqkTIGUMR5jVgq6MQlAqwAEUnWH6iblNw-JUTvw1oGO5ZSeCk40106R5IyzzAbSPuQSFex7qOi7AyGtHoIMwsAQ2vkXO9xrvzWr66F-BctE8luFBUyhn7vzxXGG7rvNWq2cbLWVCfAqhYMzDnU8vBv3nbSxQRkS5xgrRBG_3PByF1adoTY1qsn2Xk7AJDyWt8IL4SLVhj1PNeT762wJ-O4ZkYRSA" alt="Profile" class="w-full h-full object-cover">
+        </div>
+      </div>
+      
+      <div class="text-center mb-5">
+        <div class="flex items-center justify-center gap-1 mb-1">
+          <h3 class="font-bold text-[22px] text-gray-900 leading-none tracking-tight">Pandit harsh Sharma</h3>
+          <span class="material-symbols-outlined text-gray-500 text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        </div>
+        <p class="text-[13px] text-gray-600 font-medium">@MaaBaglamukhiTV • 846 subscribers • 91 videos</p>
+        <p class="text-[14px] text-gray-800 mt-2">🙏 जय माँ बगलामुखी 🙏 ...more</p>
+      </div>
+      
+      <div class="flex justify-center">
+        <a href="https://www.youtube.com/@maabaglamukhitv" target="_blank" class="bg-[#0f0f0f] hover:bg-gray-800 text-white font-medium py-2 px-8 rounded-full text-[15px] transition-colors shadow-sm">
+          Subscribe
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-full md:w-2/3 flex flex-col gap-space-md">
+  <span class="font-label-md text-label-md text-secondary uppercase tracking-widest">वैदिक विशेषज्ञ</span>
+  <h2 class="font-headline-lg text-headline-lg text-primary">पंडित हर्षित शर्मा - सिद्ध विशेष एवं वैदिक पुरोहित</h2>
+  <div class="w-16 h-1 bg-tertiary rounded-full"></div>
+  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+    माँ बगलामुखी धाम, नलखेड़ा में वर्षों से माँ पीताम्बरा की अनन्य साधना और विशेष पूजाओं के विशेषज्ञ, <strong>पंडित हर्षित शर्मा जी</strong> ने अनगिनत भक्तों के जीवन में आ रही जटिल समस्याओं (जैसे दुश्मनों की परेशानी, कोर्ट-कचहरी विवाद, व्यापार में हानि) का शास्त्रों के अनुसार समाधान किया है।
+  </p>
+  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+    पंडित जी के देखरेख में पूर्ण शुद्धता, गोत्र के साथ नाम लेकर और वैदिक मंत्रोच्चारण के साथ लाइव संकल्प (Video Call) द्वारा हवन संपन्न कराया जाता है, जिससे भक्त को घर बैठे शत-प्रतिशत फल की प्राप्ति होती है।
+  </p>
+  <div class="mt-space-sm flex flex-wrap gap-space-md">
+    <a href="https://wa.me/918769084789" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-md transition-all shadow-md">
+      <span class="material-symbols-outlined text-[18px]">chat</span>
+      <span>पंडित जी से मुफ्त सलाह लें</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: KEY TRUST PROOF BAR -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Trust Item 1 -->
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">50,000+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">संतुष्ट भक्त (देश-विदेश से)</span>
+</div>
+</div>
+<!-- Trust Item 2 -->
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">100% शुद्ध वैदिक</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">शास्त्रीय पूजा एवं गोत्र के साथ नाम लेकर</span>
+</div>
+</div>
+<!-- Trust Item 3 -->
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[26px]">videocam</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary">लाइव वीडियो प्रमाण</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">संकल्प व आहुति (हवन में अर्पण) WhatsApp पर</span>
+</div>
+</div>
+<!-- Trust Item 4 -->
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[26px]">temple_hindu</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary">महाभारत कालीन</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">युधिष्ठिर स्थापित अपने आप प्रकट हुई शक्तिपीठ</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FEATURED ANUSHTHAN & HAVAN SERVICES -->
+<section class="w-full py-space-3xl bg-surface" id="anushthan-section">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-space-2xs">नलखेड़ा शक्ति पीठ विशेष पूजा</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-space-xs">प्रमुख पूजा एवं विशेष हवन सेवाएँ</h2>
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="text-sm">✦ ॐ ✦</span>
+<span class="w-8 h-[1px] bg-primary"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          अपनी समस्या अनुसार विशिष्ट वैदिक पूजा का चयन करें। सभी हवन <strong>पंडित हर्षित शर्मा जी</strong> द्वारा आपके नाम-गोत्र से पूर्ण विधि-विधान से संपन्न कराए जाते हैं।
+        </p>
+</div>
+<!-- 4-Column Havan Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img alt="दुश्मनों से बचाव और गुप्त संकट से छुटकारा पाने की पूजा" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1W09nWsOmUbiP9m7DWfUSEe8kA8Wdg4qVY8d-AgoFaQYkFCiOBFawgKgW1BHfwyCkz45bnxWzM9Li5WYO0G-CCMGJQAgokhakP854AMuUqq4yM6Fa8VnL5fuKGY4BsKakoxzVD_KkUSXuq1EG0S96ROOOVFCwtFTNkXwLgEMRnY9ZSU8txSueAEeEpdyIMv7pg1xh7BjcYIPympXiXB8cGi_A_q_rE8m4F0QDN93SWGA_pzxsyCf236qg"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">अत्यधिक प्रभावशाली</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">दुश्मनों से बचाव और संकट से छुटकारा</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">शत्रु भय, ईर्ष्या, तंत्र दोष व पारिवारिक कलह के पूरी तरह से खत्म हेतु पीताम्बरा विशेष मंत्र हवन।</p>
+<div class="flex flex-col gap-1 text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">schedule</span> 3 से 4 घंटे विशेष आहुति (हवन में अर्पण)</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary text-[16px]">local_shipping</span> सिद्ध भस्म व प्रसाद घर भेजा जाएगा</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹5,100</span>
+</div>
+<a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/918769084789?text=शत्रु-विनाश-पूजा-संकल्प">
+                संकल्प लें
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img alt="कोर्ट केस में जीत और विवादों को सुलझाने के लिए विशेष हवन" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Wy3MgyJih8PqzLXT1mDdHBeO9kR0i0FIYCO_gvk2J8Jrpzf7JqTxVFkfS3-rFniSl-7r3qzsz2qqJR7ZnQ156bWqE3jzho8IYHIEmS0fPEnNa9pnAbjcq5xuXiFGW6Q1XdnJYZwuCTeiVkBvLanPqK2WZjd77dC3DlS38gfaMkE5xe429cdxKHNSiZnecGRXvN9Y7TfcQ9tuYWrOZZXavONVbamapHlh6I7VRTB3HBnA924keernTRHWM"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">कोर्ट केस में जीत</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">कोर्ट केस व विवाद विजय हवन</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">रुके हुए कोर्ट केस, पुलिस कार्यवाही व झूठे आरोपों से मुक्ति हेतु 36,000 बीज मंत्र जाप पूजा।</p>
+<div class="flex flex-col gap-1 text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">verified</span> 36,000 बगलामुखी बीज मंत्र</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary text-[16px]">videocam</span> लाइव संकल्प व पूर्ण आहुति (हवन में अर्पण) वीडियो</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹7,100</span>
+</div>
+<a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/918769084789?text=कोर्ट-केस-हवन-संकल्प">
+                संकल्प लें
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img alt="कर्ज मुक्ति एवं व्यापार में तरक्की बचाव पूजा" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XsA220DFMKoBX73U9nnn6PCxR3suaukxyBjYAr3gLXsVmRuomRAoxICL0qAW0sinwKZt8Y3bIGAacv3-5B3uEldHaN_2QNN07ztggRlEN8zxMlCapiUjkOTo6AR8KzH0OIxRnGm8zX5h-WKlKg3vguQhgibJvBrjZaY9fTY-b3GDm2AdvG01GxpmnwZpt0jZmFEL04avGuY9dAa1-c9X23Xmy-P-ilQNaDtgXelruApqCJCSF3DAL46uQ"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-semibold">व्यापार में तरक्की</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">कर्ज मुक्ति व व्यापार बचाव</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">रुका हुआ धन प्राप्त करने, व्यापार में निरंतर हानि रोकने तथा आर्थिक स्थायित्व हेतु विशेष पूजा।</p>
+<div class="flex flex-col gap-1 text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">auto_awesome</span> 11,000 विशेष आहुति (हवन में अर्पण)</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary text-[16px]">card_giftcard</span> सिद्ध व्यापार यंत्र मुफ्त</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹5,100</span>
+</div>
+<a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/918769084789?text=व्यापार-वृद्धि-हवन-संकल्प">
+                संकल्प लें
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img alt="कालसर्प, नवग्रह व शनि-राहु पीड़ा शांति" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xm92TYQrsXzyzAY2hZL89XFmwX4rfo0SMdEA_45UYW5Zsp4c-W5_SEJcHDd0-vgSR6BKl1QfFKHoiyft09QmA_tg9SyAbP62BFz3F_H51Zu5-JlPMV-OLsgZ50jVXCDMkyzOCkbI4z5qKkDbho7A83rkfXqTCQRe4poV0X4Mc_5Pbzi-b2sDBZhJf9-k9_ZGvI3iKhBLoJ93UgQTFNr1IQcSUTneeks8fe4S6p3V9NcoYN8hbRiKLdVQ"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-on-surface-variant text-surface font-label-sm text-label-sm font-semibold">ग्रह शांति</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">शनि-राहु व ग्रहों की शांति हवन</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ग्रह पीड़ा, कालसर्प की परेशानी, आकस्मिक दुर्घटना भय तथा दिमागी तनाव की शांति हेतु शास्त्रीय हवन।</p>
+<div class="flex flex-col gap-1 text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">wb_sunny</span> नवग्रह लकड़ी व जड़ी-बूटी</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary text-[16px]">verified_user</span> सिद्ध रक्षा सूत्र व भस्म</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹4,500</span>
+</div>
+<a class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/918769084789?text=नवग्रह-शांति-हवन-संकल्प">
+                संकल्प लें
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: SIDDH ABHIMANTRIT RAKSHA KAVACH -->
+<section class="w-full py-space-3xl bg-surface-container-low">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-space-2xs">सुरक्षा के उपाय</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-space-xs">सिद्ध पीठ से अभिमंत्रित रक्षा कवच</h2>
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="text-sm">✦ ॐ ✦</span>
+<span class="w-8 h-[1px] bg-primary"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          माँ बगलामुखी के मुख्य मंदिर में 21 दिन तक 1.25 लाख मंत्रों से सिद्ध आठ धातुओं व चांदी कवच, जो चौबीसों घंटे हर संकट व नजर दोष से आपकी रक्षा करते हैं।
+        </p>
+</div>
+<!-- 3-Column Kavach Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-xl">
+<!-- Kavach 1 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-[0_4px_24px_rgba(141,75,0,0.06)] hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 bg-surface-container-high overflow-hidden">
+<img alt="सिद्ध आठ धातुओं माँ बगलामुखी रक्षा कवच" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="./kavach_gold_mala.jpg"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm">सर्वाधिक लोकप्रिय</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">सिद्ध आठ धातुओं बगलामुखी रक्षा कवच</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">आठ धातुओं से बना यंत्र वाला लॉकेट। शत्रु स्तंभन, दुर्घटना रक्षा, ऊपरी हवा एवं नजर दोष से 24 घंटे सुरक्षा कवच.</p>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> 1.25 लाख विशेष मंत्र बगलामुखी मंत्र सिद्ध</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> गंगाजल, पीली सरसों व भस्म सहित</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> भक्त के नाम व गोत्र से अभिमंत्रित</li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹1,500</span>
+</div>
+<a class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" href="https://wa.me/918769084789?text=आठ धातुओं-कवच-ऑर्डर">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>घर मंगवाएँ</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Kavach 2 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-[0_4px_24px_rgba(141,75,0,0.06)] hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 bg-surface-container-high overflow-hidden">
+<img alt="शुद्ध चांदी माँ बगलामुखी लॉकेट कवच" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="./kavach_silver.jpg"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">शुद्ध रजत निर्मित</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">शुद्ध चांदी माँ बगलामुखी लॉकेट कवच</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">92.5% शुद्ध चांदी में बना हुआ माँ का साक्षात् यंत्र। कोर्ट केस, प्रशासनिक दबाव एवं व्यापारिक प्रतिस्पर्धा में कमाल की विजय।</p>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> शुद्ध चांदी में लेजर बना हुआ यंत्र</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> मुख्य मंदिर में विशेष अभिषेक व विशेष पूजा से सिद्ध</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> सम्पूर्ण परिवार की शांति व सुरक्षा</li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹2,100</span>
+</div>
+<a class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" href="https://wa.me/918769084789?text=चांदी-कवच-ऑर्डर">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>घर मंगवाएँ</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Kavach 3 -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest overflow-hidden shadow-[0_4px_24px_rgba(141,75,0,0.06)] hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 bg-surface-container-high overflow-hidden">
+<img alt="महा सिद्ध स्वर्ण-जड़ित कवच + सिद्ध हल्दी माला" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="./kavach_combo.jpg"/>
+<span class="absolute top-3 left-3 px-space-xs py-space-2xs rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">महा सिद्ध कॉम्बो</span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">स्वर्ण-जड़ित कवच + सिद्ध हल्दी माला</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">उच्च पद प्राप्ति, राजनीतिक विजय एवं महाविपत्ति निवारण हेतु संपूर्ण पीताम्बरा साधना किट व सिद्ध हल्दी माला।</p>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> 108 मनकों की सिद्ध प्राकृतिक हल्दी माला</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> स्वर्ण पॉलिश युक्त आठ धातुओं कवच</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span> मंदिर का मूल पीताम्बरा महाप्रसाद शामिल</li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">सहयोग राशि</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">₹3,500</span>
+</div>
+<a class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" href="https://wa.me/918769084789?text=स्वर्ण-कवच-हल्दी-माला-ऑर्डर">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>घर मंगवाएँ</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: MANDIR DARSHAN, ITIHAAS & AARTI TIMINGS -->
+<section class="w-full py-space-3xl bg-surface">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+<!-- Left Column: Temple History & Sacred Story (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold">पंडित जी की विशेषता</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            विश्व प्रसिद्ध माँ बगलामुखी धाम और पंडित हर्षित शर्मा जी
+          </h2>
+<div class="relative rounded-2xl overflow-hidden h-72 shadow-md mb-space-xs">
+<img alt="माँ बगलामुखी मंदिर नलखेड़ा सिंहद्वार" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UKnAvyBfrm4wlDE_-Y9x0hIgYNsoPz6J3zySMkVi5Mwwsn_p9bQt_9EQuuJuLmczFej7iWgX63CwaMIqXWM7mYZvQaTJcqGGgG6ad_MZS2-QGGuedm6O2vJVmqb4HS2jrXx1aNR_kbaFwBg4-FFddkC5lWQdveXLUWK-F28dx5WHjvPVSgKkqg63W7toDBTeHp10Fra0jBe0bKX_vnqqSBKVnNX8OVtoBMvDQJPs6YusVQbpLgDhGbc4I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-headline-sm text-headline-sm">लखुंदर नदी तट स्थित अपने आप प्रकट हुई तीन देवियों (बगलामुखी, लक्ष्मी, सरस्वती) प्रतिमा</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            माँ बगलामुखी धाम नलखेड़ा, जहाँ की पूजा का फल तुरंत मिलता है, पंडित हर्षित शर्मा जी यहाँ के मुख्य वैदिक पुरोहित हैं। वर्षों के अनुभव और शास्त्रों के ज्ञान के साथ, पंडित जी इसी चमत्कारी शक्तिपीठ में यजमानों के लिए विशेष पूजा, हवन और अनुष्ठान संपन्न कराते हैं। उनके मार्गदर्शन में की गई पूजा से अनगिनत लोगों को अपनी समस्याओं (कोर्ट केस, व्यापार, शत्रु बाधा) से छुटकारा मिला है।
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-secondary">वर्षों का अनुभव</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">पीढ़ियों से माँ की सेवा और सभी वैदिक कार्यों में निपुणता</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-headline-sm text-headline-sm text-primary">सिद्ध हवन कुंड</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">पंडित जी का विशेष हवन कुंड जहाँ अचूक पूजा होती है</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Aarti Timings & Live Kund (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Aarti Timings Card -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">notifications_active</span>
+<span class="font-headline-sm text-headline-sm text-primary">दैनिक दर्शन व आरती समय</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">नित्य नियम</span>
+</div>
+<div class="flex flex-col divide-y divide-surface-container gap-space-xs">
+<div class="flex items-center justify-between py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">wb_twilight</span>
+<span class="font-body-md text-body-md font-medium">प्रातः मंगला आरती</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">05:30 AM</span>
+</div>
+<div class="flex items-center justify-between py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">sunny</span>
+<span class="font-body-md text-body-md font-medium">दोपहर राजभोग आरती</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">12:00 PM</span>
+</div>
+<div class="flex items-center justify-between py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span>
+<span class="font-body-md text-body-md font-medium text-secondary">संध्या महाआरती (भव्य)</span>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold">07:30 PM</span>
+</div>
+<div class="flex items-center justify-between py-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px]">bedtime</span>
+<span class="font-body-md text-body-md font-medium">शयन आरती व कपाट बंदी</span>
+</div>
+<span class="font-label-lg text-label-lg text-outline font-bold">10:00 PM</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">info</span>
+<span class="font-body-sm text-body-sm">मंदिर दर्शन प्रातः 05:00 से रात्रि 10:30 बजे तक निरंतर खुले रहते हैं।</span>
+</div>
+</div>
+<!-- Live Kund Preview Card -->
+<div class="rounded-2xl bg-surface-container-lowest overflow-hidden shadow-md">
+<div class="h-44 relative overflow-hidden">
+<img alt="नलखेड़ा पवित्र हवन कुंड जगह" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VkDjKG1XWRjqZwE8axep1t9hFkJGN3n0CEZEbZb9XmthfNw9BOJODSE6DVb_5vUDC3rDoqobTkYuCx1XUhS-WBqPYV2LFfass1gx4lkoMFcR3UiGZniKYAsrKIHKNapGyONgtRbkQ-jgJ4WLRY2SZ63pxt5eSe0-HoNFcXhuJxWjtwn8hVulgVDTv-HVF4mqmIUJQInUmmUUfFdBvhKuhecOXaCNhu_-Xte3b_4UJVx4VIdGiPUJSIylI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<span class="absolute bottom-3 left-4 font-label-md text-label-md text-white font-semibold">शास्त्रों के अनुसार पीताम्बरा हवन कुंड जगह</span>
+</div>
+<div class="p-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">विशेष पूजा परामर्श</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">व्यक्तिगत हवन समय निर्धारण</span>
+</div>
+<a class="px-space-md py-space-xs rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm hover:bg-tertiary-container transition-colors" href="https://wa.me/918769084789">
+                पंडित जी से पूछें
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: 3-STEP ONLINE HAVAN PROCESS -->
+<section class="w-full py-space-3xl bg-surface-container">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-space-2xs">सरल एवं प्रामाणिक</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-space-xs">घर बैठे 3-स्टेप ऑनलाइन हवन प्रक्रिया</h2>
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="text-sm">✦ ॐ ✦</span>
+<span class="w-8 h-[1px] bg-primary"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          यदि आप व्यक्तिगत रूप से नलखेड़ा धाम नहीं आ सकते, तो भी आप एवं आपका परिवार साक्षात् फल प्राप्त कर सकते हैं।
+        </p>
+</div>
+<!-- 3 Steps Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+<!-- Step 1 -->
+<div class="relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-md">
+            1
+          </div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">नाम, गोत्र व मनोकामना विवरण</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              ऑनलाइन बुकिंग फॉर्म अथवा WhatsApp के माध्यम से अपने एवं परिवार के सदस्यों के नाम, गोत्र, फोटो एवं विशिष्ट समस्या/मनोकामना साझा करें।
+            </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-2xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+<span>गोपनीय एवं सुरक्षित</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-md">
+            2
+          </div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">शुभ मुहूर्त में वेदपाठी आहुति (हवन में अर्पण)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              निर्धारित शुभ चौघड़िया मुहूर्त में नलखेड़ा के दीक्षित आचार्यों द्वारा आपके नाम से संकल्प लेकर गाय के शुद्ध घी व पीली सरसों से हवन संपन्न होता है।
+            </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-2xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span>100% सात्विक वैदिक विधान</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-md">
+            3
+          </div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">लाइव वीडियो व सिद्ध भस्म भेजना</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              हवन समाप्ति उपरांत WhatsApp पर आपके संकल्प व आहुति (हवन में अर्पण) का वीडियो प्रमाण भेजा जाता है, तथा सिद्ध भस्म, रक्षा सूत्र व प्रसाद कूरियर द्वारा घर भेजा जाता है।
+            </p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-2xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">mark_email_read</span>
+<span>स्पीड पोस्ट ट्रैकिंग सहित</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: DEVOTEES EXPERIENCES & FAQ SECTION -->
+<section class="w-full py-space-3xl bg-surface">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Left: Devotee Testimonials (6 Cols) -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">सच्चे अनुभव</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">भक्तों के अनुभव एवं कृपा</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">देश-विदेश के भक्तों के जीवन में माँ बगलामुखी की कृपा के प्रत्यक्ष प्रमाण।</p>
+</div>
+<!-- Review Card 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-primary font-bold">
+                  र
+                </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">राघवेंद्र शर्मा</span>
+<span class="font-label-sm text-label-sm text-outline">नई दिल्ली • कोर्ट केस में जीत पूजा</span>
+</div>
+</div>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+              "7 वर्षों से चल रहे पैतृक संपत्ति के झूठे कोर्ट केस के कारण मानसिक रूप से टूट चुका था। नलखेड़ा धाम से 36,000 बीज मंत्र पूजा करवाया। संकल्प के ठीक 2 महीने बाद न्यायालय का फैसला हमारे पक्ष में आया। माँ की असीम कृपा है।"
+            </p>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>WhatsApp द्वारा सत्यापित भक्त</span>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-secondary font-bold">
+                  अ
+                </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">अमित कुमार गुप्ता</span>
+<span class="font-label-sm text-label-sm text-outline">इंदौर (म.प्र.) • व्यापार में तरक्की बचाव हवन</span>
+</div>
+</div>
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+              "व्यापार में निरंतर लाखों का घाटा हो रहा था और विरोधी लगातार परेशान कर रहे थे। नलखेड़ा के पुजारियों द्वारा करवाए गए व्यापार बचाव हवन एवं घर पहुंचे सिद्ध कवच के बाद स्थिति पूरी तरह बदल गई। अब सब मंगलमय है।"
+            </p>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>प्रसाद व रक्षा कवच प्राप्तकर्ता</span>
+</div>
+</div>
+</div>
+<!-- Right: FAQ Accordion (6 Cols) -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">जिज्ञासा समाधान</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">अक्सर पूछे जाने वाले प्रश्न (FAQ)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ऑनलाइन पूजा व संकल्प से जुड़े महत्वपूर्ण नियम एवं विधि।</p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-container">
+<!-- FAQ Item 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary focus:outline-none" onclick="toggleFaq('faq-1')" type="button">
+<span>क्या ऑनलाइन हवन में मेरा उपस्थित होना अनिवार्य है?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300" id="icon-faq-1">expand_more</span>
+</button>
+<div class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="faq-1">
+                नहीं, वैदिक शास्त्रों में 'प्रतिनिधि संकल्प' का स्पष्ट विधान है। आपके नाम, गोत्र एवं पिता/पति के नाम से मंदिर के वेदपाठी आचार्य स्वयं भक्त बनकर आपके लिए आहुति (हवन में अर्पण) अर्पित करते हैं। इसका संपूर्ण पुण्य एवं फल आपको ही प्राप्त होता है।
+              </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary focus:outline-none" onclick="toggleFaq('faq-2')" type="button">
+<span>हवन के बाद प्रसाद व सिद्ध भस्म कैसे मिलेगी?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300" id="icon-faq-2">expand_more</span>
+</button>
+<div class="hidden mt-space-xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="faq-2">
+                हवन संपन्न होने के अगले दिन मंदिर कार्यालय द्वारा माँ का महाप्रसाद, अभिमंत्रित रक्षा सूत्र, सिद्ध भस्म एवं माँ का चित्र भारतीय डाक (स्पीड पोस्ट) द्वारा आपके दिए पते पर भेजा जाएगा किया जाता है। आपको ट्रैकिंग नंबर WhatsApp पर प्रदान किया जाता है।
+              </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary focus:outline-none" onclick="toggleFaq('faq-3')" type="button">
+<span>यदि मुझे अपना गोत्र ज्ञात न हो तो संकल्प कैसे होगा?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300" id="icon-faq-3">expand_more</span>
+</button>
+<div class="hidden mt-space-xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="faq-3">
+                शास्त्रों के अनुसार यदि किसी भक्त को अपना वैदिक गोत्र ज्ञात न हो, तो 'कश्यप' गोत्र के अंतर्गत संकल्प कराया जाता है। आप निसंकोच संकल्प फॉर्म भर सकते हैं।
+              </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<button class="w-full flex items-center justify-between text-left font-headline-sm text-headline-sm text-primary focus:outline-none" onclick="toggleFaq('faq-4')" type="button">
+<span>क्या पूजा की जानकारी गोपनीय रखी जाती है?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300" id="icon-faq-4">expand_more</span>
+</button>
+<div class="hidden mt-space-xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="faq-4">
+                हाँ, पीताम्बरा तंत्र पीठ नलखेड़ा की परम्परा अनुसार सभी भक्तों के नाम, परिवार का विवरण एवं उनकी समस्या 100% गोपनीय रखी जाती है। यह किसी भी सार्वजनिक माध्यम पर साझा नहीं की जाती।
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: BOTTOM SACRED BANNER CTA -->
+<section class="w-full bg-primary text-on-primary py-space-2xl relative overflow-hidden">
+<div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop relative z-10 flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-2xs max-w-xl text-center md:text-left">
+<span class="font-label-md text-label-md text-primary-fixed uppercase tracking-wider">तत्काल संकट निवारण</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">आज ही अपने नाम-गोत्र से संकल्प लें</h2>
+<p class="font-body-md text-body-md text-primary-fixed leading-relaxed">
+          विश्व प्रसिद्ध सिद्धपीठ नलखेड़ा से माँ बगलामुखी की कृपा प्राप्त करें। संकट, भय और बाधाओं से मुक्ति पाएं।
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md shrink-0">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-tertiary text-on-tertiary font-label-lg text-label-lg shadow-lg hover:bg-tertiary-container transition-all" href="https://wa.me/918769084789?text=सादर-प्रणाम-मुझे-हवन-संकल्प-लेना-है" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>WhatsApp पर संकल्प बुक करें</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-md hover:bg-surface transition-all" href="tel:+918769084789">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>+91 87690 84789</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for FAQ Accordion -->
+<script>
+    function toggleFaq(faqId) {
+      const content = document.getElementById(faqId);
+      const icon = document.getElementById('icon-' + faqId);
+      if (!content || !icon) return;
+
+      const isHidden = content.classList.contains('hidden');
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex');
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-2xl pb-space-xl"><div class="max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="font-headline-sm text-headline-sm leading-none">ॐ</span></div><span class="font-headline-sm text-headline-sm text-primary">पंडित हर्षित शर्मा</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">पंडित हर्षित शर्मा माँ बगलामुखी धाम नलखेड़ा के अनुभवी वैदिक पुरोहित हैं, जो वर्षों से पूरी प्रामाणिकता और पारदर्शिता के साथ ऑनलाइन और ऑफलाइन विशेष अनुष्ठान संपन्न करा रहे हैं।</p><div class="flex items-center gap-space-sm text-secondary"><span class="material-symbols-outlined text-[18px]">verified</span><span class="font-label-sm text-label-sm font-semibold">अधिकृत वैदिक पुरोहित</span></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm text-primary">प्रमुख सेवाएँ</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="services.html">शत्रु विजय बगलामुखी हवन</a><a class="hover:text-primary transition-colors" href="services.html">कोर्ट कचहरी व वाद विवाद शांति</a><a class="hover:text-primary transition-colors" href="services.html">ऋण मुक्ति व व्यापार में तरक्की पूजा</a><a class="hover:text-primary transition-colors" href="services.html">महा विशेष मंत्र विशेष हवन</a><a class="hover:text-primary transition-colors font-bold mt-2" href="services.html">संपूर्ण पूजा लिस्ट देखें ➔</a></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm text-primary">महत्वपूर्ण लिंक्स</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="index.html">पंडित जी से कैसे जुड़ें?</a><a class="hover:text-primary transition-colors" href="gallery.html">गैलरी (फ़ोटो/वीडियो)</a><a class="hover:text-primary transition-colors" href="#">यजमानों के अनुभव</a><a class="hover:text-primary transition-colors" href="#">प्रसाद कूरियर ट्रैकिंग</a><a class="hover:text-primary transition-colors" href="#">नियम व गोपनीयता नीति</a></div></div><div class="flex flex-col gap-space-md"><span class="font-headline-sm text-headline-sm text-primary">मार्गदर्शन केंद्र</span><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">call</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">+91 87690 84789</span><span class="text-label-sm font-label-sm text-outline">प्रातः 6:00 से रात्रि 11:00 बजे तक</span></div></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[20px]">mark_email_read</span><span class="font-label-md text-label-md">panditharshitsharma@gmail.com</span></div><div class="flex items-center gap-space-md pt-2"><a href="https://www.youtube.com/@maabaglamukhitv" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" class="h-6"></a><a href="https://www.instagram.com/baglarani_/" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="h-6"></a><a href="#" class="text-on-surface-variant hover:text-primary transition-colors"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" class="h-6"></a></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container-high"><div class="flex items-center gap-space-xs"><span>© 2026 पंडित हर्षित शर्मा। सर्वाधिकार सुरक्षित।</span></div><div class="flex items-center gap-space-md"><span class="text-primary">100% सात्विक वैदिक पद्धति</span><span>•</span><span>गोत्र के साथ नाम लेकर संकल्प</span><span>•</span><span>गंगाजल व सिद्ध भस्म भेजना</span></div></div></div></footer></body></html>
