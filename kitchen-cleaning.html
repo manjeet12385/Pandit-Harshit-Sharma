@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Cleaning Services - Joamex | Professional Deep Clean</title>
+    <meta name="description" content="Book professional kitchen cleaning services with Joamex. Chimney cleaning, appliance cleaning, complete kitchen deep clean starting at affordable prices. 4.81 star rated service." />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="style.css?v=11">
+    <!-- Font Awesome - async to fix render-blocking -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/></noscript>
+    <style>
+        .kitchen-page {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .kitchen-left {
+            width: 320px;
+            flex-shrink: 0;
+        }
+
+        .kitchen-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .kitchen-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 8px 0;
+            line-height: 1.2;
+        }
+
+        .kitchen-rating {
+            font-size: 13px;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .instant-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .instant-top {
+            background: #1e8f52;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .instant-bottom {
+            font-size: 11px;
+            color: #334155;
+            padding: 4px 12px;
+            font-weight: 500;
+        }
+
+        .select-service-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .select-service-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            margin: 0 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .service-grid-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            row-gap: 25px;
+        }
+
+        .service-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .service-option-icon {
+            width: 60px;
+            height: 60px;
+            background: #fdfbf7;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            border: 1px solid #f1f5f9;
+            overflow: hidden;
+        }
+
+        .service-option-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-option-text {
+            font-size: 11px;
+            font-weight: 500;
+            color: #334155;
+            line-height: 1.3;
+        }
+
+        .kitchen-right {
+            flex-grow: 1;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: 450px;
+        }
+
+        .kitchen-banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .kitchen-banner-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .kitchen-banner-text {
+            font-size: 38px;
+            color: white;
+            font-weight: 700;
+            line-height: 1.3;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            max-width: 400px;
+        }
+
+        .slider-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            height: 3px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            z-index: 2;
+        }
+
+        .slider-progress {
+            height: 100%;
+            width: 25%;
+            background: white;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body style="background-color: #fdfbf7;">
+
+    <!-- Header -->
+    <header class="header">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="index.html" style="color: #000; font-size: 20px; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="index.html" class="logo" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none;">
+                <img src="images/logo.png" alt="Joamex Icon" style="height: 35px; border-radius: 8px;">
+                <img src="images/logo-text.png" alt="Joamex Text" style="height: 12px;">
+            </a>
+        </div>
+        <div class="search-container" id="header-search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search for services">
+        </div>
+        <div class="header-actions">
+            <button class="location-btn"><i class="fa-solid fa-location-dot"></i> Use Current Location</button>
+            <button class="partner-btn"><i class="fa-solid fa-handshake"></i> Join as Partner</button>
+            <div class="icon-btn"><i class="fa-regular fa-user"></i></div>
+            <div class="icon-btn" id="open-cart-btn" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" style="position: absolute; top: -5px; right: -5px; background: #e53935; color: white; font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 10px; display: none;">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="kitchen-page">
+        <!-- Left Sidebar -->
+        <div class="kitchen-left">
+            <div class="kitchen-header">
+                <div>
+                    <h1 class="kitchen-title">Kitchen<br>Cleaning</h1>
+                    <div class="kitchen-rating">
+                        <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+                        <strong>4.81</strong> (2.7 M bookings)
+                    </div>
+                </div>
+                <div class="instant-badge">
+                    <div class="instant-top"><i class="fa-solid fa-bolt"></i> Instant</div>
+                    <div class="instant-bottom">In 54 mins</div>
+                </div>
+            </div>
+
+            <div class="select-service-box">
+                <h3 class="select-service-title">Select a service</h3>
+                <div class="service-grid-box">
+                    <div class="service-option" onclick="showSection('value-packs')">
+                        <div class="service-option-icon">
+                            <span style="color: #1e8f52; font-weight: 800; font-size: 13px; text-align: center; line-height: 1.1;">COMBO<br>DEALS</span>
+                        </div>
+                        <div class="service-option-text">Value packs</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('chimney-cleaning')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Chimney cleaning">
+                        </div>
+                        <div class="service-option-text">Chimney cleaning</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('complete-kitchen-cleaning')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Complete kitchen cleaning">
+                        </div>
+                        <div class="service-option-text">Complete kitchen cleaning</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('complete-kitchen-cleaning')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Appliance cleaning">
+                        </div>
+                        <div class="service-option-text">Appliance cleaning</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('complete-kitchen-cleaning'); setTimeout(() => document.getElementById('cabinets-tiles').scrollIntoView({behavior: 'smooth', block: 'start'}), 100);">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Cabinets & tiles">
+                        </div>
+                        <div class="service-option-text">Cabinets & tiles</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('complete-kitchen-cleaning'); setTimeout(() => document.getElementById('mini-services').scrollIntoView({behavior: 'smooth', block: 'start'}), 100);">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Mini services">
+                        </div>
+                        <div class="service-option-text">Mini services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="kitchen-right">
+            
+            <!-- Default Banner -->
+            <div id="default-banner" style="position: relative; border-radius: 16px; overflow: hidden; min-height: 450px; background: #000;">
+                <img src="images/cleaning.jpg" alt="Kitchen Cleaning Banner" class="kitchen-banner-img" style="opacity: 0.6;">
+                <div class="kitchen-banner-content">
+                    <div class="kitchen-banner-text">They need professional care...</div>
+                </div>
+                <div class="slider-indicator">
+                    <div class="slider-progress"></div>
+                </div>
+            </div>
+
+            <!-- Value Packs Section (Hidden by default) -->
+            <div id="value-packs" style="display: none; padding: 10px 0;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Value packs</h2>
+
+                <!-- Item 1: Regular chimney & stove cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Regular chimney & stove cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.82</span>
+                            <span style="text-decoration: underline dashed;">(5K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹548 <span style="color: #475569; font-weight: 400;">• 1 hr 25 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Stovetops, burners, mesh & filter cleaning with steam</li>
+                            <li>Excludes motor cleaning, repair & automatic chimney cleaning</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Regular chimney" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 2: Deep chimney & stove service -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Deep chimney & stove service</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.70</span>
+                            <span style="text-decoration: underline dashed;">(1K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹1,498
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Dismantling for internal servicing of motor, blowers & filters.</li>
+                            <li>Interior & exterior surface degreasing</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Deep chimney" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                        <div style="position: absolute; bottom: -35px; left: 0; right: 0; text-align: center; font-size: 11px; color: #64748b;">3 options</div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Kitchen fan & window cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Kitchen fan & window cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.79</span>
+                            <span style="text-decoration: underline dashed;">(3K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹499 <span style="text-decoration: line-through; color: #94a3b8; font-weight: 400; margin: 0 5px;">₹577</span> <span style="color: #475569; font-weight: 400;">• 60 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Deep cleaning of kitchen ceiling fan, exhaust fan & windows</li>
+                            <li>Stain removal using professional chemicals</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Kitchen fan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 4: Cabinets, tiles & sink cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Cabinets, tiles & sink cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.84</span>
+                            <span style="text-decoration: underline dashed;">(1.1M reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹649 <span style="color: #475569; font-weight: 400;">• 1 hr 45 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Deep cleaning of kitchen cabinets/trolleys, tiles, slab & sink</li>
+                            <li>Cleaning of surfaces, remove oil & grease with steam machine</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Cabinets cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Chimney Cleaning Header inside Value packs -->
+                <div style="margin-top: 40px;">
+                    <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Chimney cleaning</h2>
+
+                    <!-- Video Thumbnail -->
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 30px; background: #fdf8f4; height: 250px; display: flex; justify-content: center; align-items: center;">
+                        <div style="width: 60px; height: 60px; background: rgba(0,0,0,0.3); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                            <i class="fa-solid fa-play" style="color: white; font-size: 24px; margin-left: 4px;"></i>
+                        </div>
+                        <i class="fa-solid fa-volume-xmark" style="position: absolute; bottom: 15px; right: 15px; color: #fff; font-size: 18px; opacity: 0.8;"></i>
+                    </div>
+
+                    <!-- Item 1: Regular chimney cleaning -->
+                    <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                        <div style="flex: 1; padding-right: 20px;">
+                            <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Regular chimney cleaning</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                                <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                                <span style="font-weight: 500; color: #475569;">4.86</span>
+                                <span style="text-decoration: underline dashed;">(23K reviews)</span>
+                            </div>
+                            <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                                Starts at ₹399 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                            </div>
+                            <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                                <li>Chimney exterior, mesh & filter cleaning with a steam machine</li>
+                                <li>Excludes motor cleaning, repair & automatic chimney cleaning</li>
+                            </ul>
+                            <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                        </div>
+                        <div>
+                            <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Deep chimney service -->
+                    <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                        <div style="flex: 1; padding-right: 20px;">
+                            <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Deep chimney service</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                                <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                                <span style="font-weight: 500; color: #475569;">4.80</span>
+                                <span style="text-decoration: underline dashed;">(5K reviews)</span>
+                            </div>
+                            <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                                Starts at ₹1,249 <span style="color: #475569; font-weight: 400;">• 1 hr 45 mins</span>
+                            </div>
+                            <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                                <li>Dismantling for internal servicing of motor, blowers & filters</li>
+                                <li>Interior & exterior surface degreasing</li>
+                            </ul>
+                            <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                        </div>
+                        <div>
+                            <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Chimney Cleaning Section (Hidden by default) -->
+            <div id="chimney-cleaning" style="display: none; padding: 10px 0;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Chimney cleaning</h2>
+
+                <!-- Video Thumbnail -->
+                <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 30px; background: #fdf8f4; height: 250px; display: flex; justify-content: center; align-items: center;">
+                    <div style="width: 60px; height: 60px; background: rgba(0,0,0,0.3); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                        <i class="fa-solid fa-play" style="color: white; font-size: 24px; margin-left: 4px;"></i>
+                    </div>
+                    <i class="fa-solid fa-volume-xmark" style="position: absolute; bottom: 15px; right: 15px; color: #fff; font-size: 18px; opacity: 0.8;"></i>
+                </div>
+
+                <!-- Item 1: Regular chimney cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Regular chimney cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.86</span>
+                            <span style="text-decoration: underline dashed;">(23K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹399 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Chimney exterior, mesh & filter cleaning with a steam machine</li>
+                            <li>Excludes motor cleaning, repair & automatic chimney cleaning</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div>
+                        <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 2: Deep chimney service -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Deep chimney service</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.80</span>
+                            <span style="text-decoration: underline dashed;">(5K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹1,249 <span style="color: #475569; font-weight: 400;">• 1 hr 45 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Dismantling for internal servicing of motor, blowers & filters</li>
+                            <li>Interior & exterior surface degreasing</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div>
+                        <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete Kitchen Cleaning Section (Hidden by default) -->
+            <div id="complete-kitchen-cleaning" style="display: none; padding: 10px 0;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Complete kitchen cleaning</h2>
+
+                <!-- Video Thumbnail -->
+                <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 30px; background: #eaddd3; height: 250px; display: flex; justify-content: center; align-items: center;">
+                    <img src="images/cleaning.jpg" alt="Complete kitchen cleaning video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+                    <div style="width: 60px; height: 60px; background: rgba(0,0,0,0.5); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 2;">
+                        <i class="fa-solid fa-play" style="color: white; font-size: 24px; margin-left: 4px;"></i>
+                    </div>
+                    <i class="fa-solid fa-volume-xmark" style="position: absolute; bottom: 25px; right: 15px; color: #fff; font-size: 18px; opacity: 0.9; z-index: 2;"></i>
+                    <div style="position: absolute; bottom: 10px; left: 15px; right: 15px; height: 4px; background: rgba(255,255,255,0.4); border-radius: 2px; z-index: 2;">
+                        <div style="height: 100%; width: 40%; background: #fff; border-radius: 2px;"></div>
+                    </div>
+                </div>
+
+                <!-- Item 1: Complete kitchen cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Complete kitchen cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.77</span>
+                            <span style="text-decoration: underline dashed;">(456K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹999 <span style="color: #475569; font-weight: 400;">• 2 hrs 30 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Cleaning of objects & surfaces with steam machine</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div>
+                        <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                    </div>
+                </div>
+
+                <!-- Appliance Cleaning inside Complete Kitchen -->
+                <div style="margin-top: 40px;">
+                    <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Appliance cleaning</h2>
+
+                <!-- Item 1: Fridge cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Fridge cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.84</span>
+                            <span style="text-decoration: underline dashed;">(183K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹399
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Deep cleaning of fridge exterior with steam machine</li>
+                            <li>Wet wiping of interior to remove food spills, stains & odour</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Fridge cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: cursor; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                        <div style="position: absolute; bottom: -35px; left: 0; right: 0; text-align: center; font-size: 11px; color: #64748b;">3 options</div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Microwave cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Microwave cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.82</span>
+                            <span style="text-decoration: underline dashed;">(43K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹199 <span style="color: #475569; font-weight: 400;">• 15 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Deep cleaning of microwave exterior to remove grease & oil</li>
+                            <li>Wet wiping of interior to remove burnt stains & odour</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Microwave cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 3: Gas stove cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Gas stove cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.80</span>
+                            <span style="text-decoration: underline dashed;">(64K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹99
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Stovetops, burners & knobs cleaning with steam machine</li>
+                            <li>Wet wiping of interior to remove burnt stains & odour</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Gas stove cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                        <div style="position: absolute; bottom: -35px; left: 0; right: 0; text-align: center; font-size: 11px; color: #64748b;">3 options</div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Appliance cleaning package -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Appliance cleaning package</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.78</span>
+                            <span style="text-decoration: underline dashed;">(9K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹1,096
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Includes cleaning of chimney, fridge, gas stove & microwave</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Appliance package" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                        <div style="position: absolute; bottom: -35px; left: 0; right: 0; text-align: center; font-size: 11px; color: #64748b;">3 options</div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Air fryer cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Air fryer cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.81</span>
+                            <span style="text-decoration: underline dashed;">(8K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹199 <span style="color: #475569; font-weight: 400;">• 30 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Wet wiping of interior to remove oil stains & odour</li>
+                            <li>Cleaning of tray to remove food spills</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Air fryer" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 6: OTG cleaning -->
+                <div style="border-bottom: 1px dashed #cbd5e1; padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">OTG cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.80</span>
+                            <span style="text-decoration: underline dashed;">(8K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹399 <span style="color: #475569; font-weight: 400;">• 50 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Cleaning of interior to remove food crumbs & spills</li>
+                            <li>Exterior & back panel cleaning to remove oil & grease</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="OTG cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 7: Sandwich Maker/Griller cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Sandwich Maker/Griller cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.82</span>
+                            <span style="text-decoration: underline dashed;">(6K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹99 <span style="color: #475569; font-weight: 400;">• 15 mins</span>
+                        </div>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Sandwich maker" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+            <!-- Cabinets & Tiles Section -->
+            <div id="cabinets-tiles" style="padding: 10px 0; margin-top: 40px;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Cabinets & tiles</h2>
+
+                <!-- Item 1: Tiles & slabs cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Tiles & slabs cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.79</span>
+                            <span style="text-decoration: underline dashed;">(87K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹299 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                        </div>
+                        <ul style="margin: 0 0 15px 0; padding-left: 18px; color: #475569; font-size: 13px; line-height: 1.6;">
+                            <li style="margin-bottom: 5px;">Remove grease and oil stains using steam machine</li>
+                            <li>Tile grout cleaning using brush</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Tiles & slabs cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 2: Cabinets/Trolleys cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Cabinets/Trolleys cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.79</span>
+                            <span style="text-decoration: underline dashed;">(80K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹299
+                        </div>
+                        <ul style="margin: 0 0 15px 0; padding-left: 18px; color: #475569; font-size: 13px; line-height: 1.6;">
+                            <li style="margin-bottom: 5px;">Remove, dirt, oil, and grease with steam machine</li>
+                            <li>Wiping on the exterior for a spotless, grease-free finish</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Cabinets cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; z-index: 2; width: 100%;">
+                            <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); width: max-content;">Add</button>
+                            <span style="font-size: 10px; color: #64748b; margin-top: 5px;">2 options</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mini services Section -->
+            <div id="mini-services" style="padding: 10px 0; margin-top: 40px;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Mini services</h2>
+
+                <!-- Item 1: Ceiling fan cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Ceiling fan cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.86</span>
+                            <span style="text-decoration: underline dashed;">(687K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹89 <span style="color: #475569; font-weight: 400;">• 15 mins</span>
+                        </div>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Ceiling fan cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 2: Exhaust fan cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Exhaust fan cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.81</span>
+                            <span style="text-decoration: underline dashed;">(120K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹99 <span style="color: #475569; font-weight: 400;">• 20 mins</span>
+                        </div>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Exhaust fan cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 3: Sink & under the sink -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Sink & under the sink</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.79</span>
+                            <span style="text-decoration: underline dashed;">(87K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹129 <span style="color: #475569; font-weight: 400;">• 20 mins</span>
+                        </div>
+                        <ul style="margin: 0 0 15px 0; padding-left: 18px; color: #475569; font-size: 13px; line-height: 1.6;">
+                            <li>Includes cleaning of the sink, taps, and under sink area</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Sink cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Item 4: Kitchen window cleaning -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Kitchen window cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.78</span>
+                            <span style="text-decoration: underline dashed;">(76K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            ₹399 <span style="color: #475569; font-weight: 400;">• 30 mins</span>
+                        </div>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Kitchen window cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            const allSections = [
+                'default-banner', 'value-packs', 'chimney-cleaning',
+                'complete-kitchen-cleaning', 'appliance-cleaning'
+            ];
+            
+            allSections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+            
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) targetSection.style.display = 'block';
+        }
+    </script>
+    <script src="common.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

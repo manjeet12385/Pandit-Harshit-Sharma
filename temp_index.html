@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Joamex - Home Services Simplified</title>
+<link href="style.css?v=1000" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+<div style="display: flex; align-items: center; gap: 15px;">
+<button id="back-btn" style="background: none; border: none; font-size: 20px; cursor: pointer; display: none;"><i class="fa-solid fa-arrow-left"></i></button>
+<a class="logo" href="index.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; margin-right: 15px; text-decoration: none;">
+<img src="images/logo.png" alt="Joamex Icon" style="height: 35px; border-radius: 8px;">
+<img src="images/logo-text.png" alt="Joamex Text" style="height: 12px;">
+</a>
+</div>
+<div class="search-container" id="header-search" style="display: block;">
+<i class="fa-solid fa-magnifying-glass search-icon"></i>
+<input placeholder="Search for services" type="text"/>
+</div>
+<div class="header-actions">
+<button class="location-btn"><i class="fa-solid fa-location-dot"></i> Use Current Location</button>
+<button class="partner-btn"><i class="fa-solid fa-handshake"></i> Join as Partner</button>
+<div class="icon-btn"><i class="fa-regular fa-user"></i></div>
+<div class="icon-btn" id="open-cart-btn" style="position: relative;">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cart-badge" style="position: absolute; top: -5px; right: -5px; background: #e53935; color: white; font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 10px; display: none;">0</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="main-content">
+<!-- Home Service Carousel -->
+<section class="home-services">
+<h2>Home service</h2>
+<div class="carousel-container">
+<div class="carousel" id="carousel">
+<div class="carousel-item mini-slider-wrapper" id="miniSliderCard">
+<div class="mini-slider-track" id="miniSliderTrack">
+<img alt="Plumbing Service" src="images/plumber.jpg"/>
+<img alt="AC Service" src="images/slider_ac.png"/>
+<img alt="Home Cleaning" src="images/slider_cleaning.png"/>
+<img alt="Pest Control" src="images/slider_pest.png"/>
+</div>
+<button class="mini-nav-btn mini-prev" id="miniPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="mini-nav-btn mini-next" id="miniNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+<div class="carousel-item">
+<img alt="Kitchen Installation" src="images/kitchen.jpg"/>
+</div>
+<div class="carousel-item">
+<img alt="Painting Service" src="images/painter.jpg"/>
+</div>
+</div>
+</div></section>
+<!-- What are you looking for Section -->
+<section class="services-grid-container">
+<h3>What are you looking for?</h3>
+<div class="divider"></div>
+<div class="services-grid">
+<div class="service-item" id="ac-repair-btn">
+<div class="service-icon"><img alt="AC" src="images/ac.jpg"/></div>
+<p>AC, Appliance &amp; Repair</p>
+</div>
+<div class="service-item" id="epc-btn">
+<div class="service-icon"><img alt="Electrician" src="images/tools.jpg"/></div>
+<p>Electrician, Plumber &amp; Carpenter</p>
+</div>
+<div class="service-item" id="cleaning-btn">
+<div class="service-icon"><img alt="Cleaning" src="images/cleaning.jpg"/></div>
+<p>Cleaning, Pest Control &amp; Safety</p>
+</div>
+<div class="service-item" id="renovation-btn">
+<div class="service-icon"><img alt="Renovation" src="images/renovation.jpg"/></div>
+<p>Home Renovation &amp; Interior</p>
+</div>
+<div class="service-item" id="fabrication-modal-trigger" style="cursor: pointer;">
+<div class="service-icon"><img alt="Fabrication" src="images/fabrication.jpg"/></div>
+<p>Fabrication, Grills &amp; Roofing</p>
+</div>
+<div class="service-item" id="womens-beauty-btn">
+<div class="service-icon"><img alt="Beauty" src="images/beauty.jpg"/></div>
+<p>Women's Beauty &amp; Spa</p>
+</div>
+<div class="service-item" id="mens-grooming-btn">
+<div class="service-icon"><img alt="Grooming" src="images/grooming.jpg"/></div>
+<p>Men's Grooming &amp; Massage</p>
+</div>
+<div class="service-item" id="logistics-modal-trigger" style="cursor: pointer;">
+<div class="service-icon"><img alt="Home Care" src="images/homecare.jpg"/></div>
+<p>Home Care, Support &amp; Logistics</p>
+</div>
+<div class="service-item" id="security-modal-trigger" style="cursor: pointer;">
+<div class="service-icon"><img alt="Security" src="images/security.jpg"/></div>
+<p>Home Security, Solar &amp; Water</p>
+</div>
+</div>
+<div class="stats-container">
+<div class="stat-item">
+<div class="stat-value">4.8<i class="fa-solid fa-star"></i></div>
+<div class="stat-label">Service Rating</div>
+</div>
+<div class="stat-item">
+<div class="stat-value">100K+</div>
+<div class="stat-label">Happy Customers</div>
+</div>
+<div class="stat-item">
+<div class="stat-value">5K+</div>
+<div class="stat-label">Expert Partners</div>
+</div>
+</div>
+</section>
+<!-- Spotlight Section -->
+<section class="spotlight-section">
+<h2>In the spotlight</h2>
+<div class="spotlight-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnSpotlight"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="spotlight-container" id="spotlight-carousel">
+<div class="spotlight-card card-beige">
+<h4>A cleaner home,<br/>without any hassle</h4>
+<p>Full home cleaning</p>
+<button class="btn-black">Book now</button>
+</div>
+<div class="spotlight-card card-grey">
+<h4>Deep clean with<br/>foam-jet AC service</h4>
+<p>AC service &amp; repair</p>
+<button class="btn-black">Book now</button>
+</div>
+<div class="spotlight-card card-blue">
+<h4>Home repairs at<br/>affordable prices</h4>
+<p>Electricians, plumbers, carpenters</p>
+<button class="btn-blue">Book now</button>
+</div>
+<div class="spotlight-card card-pest">
+<h4>Make your home<br/>pest-free</h4>
+<p>2 visit pest-control pack</p>
+<button class="btn-black">Book now</button>
+</div>
+<div class="spotlight-card card-olive">
+<h4>Relax &amp; rejuvenate<br/>at home</h4>
+<p>Spa for women</p>
+<button class="btn-olive">Book now</button>
+</div>
+</div>
+<button class="nav-btn next" id="nextBtnSpotlight"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- New and Noteworthy Section -->
+<section class="noteworthy-section">
+<h2>New and noteworthy</h2>
+<div class="noteworthy-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnNoteworthy"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="noteworthy-container" id="noteworthy-carousel">
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<img alt="Full Home Cleaning" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&amp;w=800&amp;auto=format&amp;fit=crop"/>
+</div>
+<h4>Full Home/ By Room Cleaning</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<img alt="Full home painting" src="images/painter.jpg"/>
+</div>
+<h4>Full home painting</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<img alt="Living &amp; Bedroom Cleaning" src="images/image.png"/>
+</div>
+<h4>Living &amp; Bedroom Cleaning</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<div class="new-badge">New</div>
+<img alt="Wall Panels by Revamp" src="images/carpenter.jpg"/>
+</div>
+<h4>Wall Panels by Revamp</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<div class="new-badge">New</div>
+<img alt="Native Water Purifier" src="images/plumber.jpg"/>
+</div>
+<h4>Native Water Purifier</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<img alt="Kitchen Cleaning" src="images/cleaning.jpg"/>
+</div>
+<h4>Kitchen Cleaning</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<img alt="Hair Studio for Women" src="images/beauty.jpg"/>
+</div>
+<h4>Hair Studio for Women</h4>
+</div>
+<div class="noteworthy-item">
+<div class="noteworthy-img-wrapper">
+<img alt="AC Service &amp; Repair" src="images/ac.jpg"/>
+</div>
+<h4>AC Service &amp; Repair</h4>
+<p class="delivery-time"><i class="fa-solid fa-bolt"></i> In 44 mins</p>
+</div>
+</div>
+<button class="nav-btn next" id="nextBtnNoteworthy"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- Most Booked Services Section -->
+<section class="most-booked-section">
+<h2>Most booked services</h2>
+<div class="most-booked-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnMostBooked"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="most-booked-container" id="most-booked-carousel">
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="AC repair" src="images/ac.jpg"/>
+</div>
+<h4>AC repair</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.73  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹299</p>
+<button class="add-btn" onclick="addToCart('AC repair', 299)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Haircut for men" src="images/salon_haircut_men.jpg"/>
+</div>
+<h4>Haircut for men</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.86</p>
+<p class="service-price">₹259</p>
+<button class="add-btn" onclick="addToCart('Haircut for men', 259)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Foam-jet AC service" src="images/ac.jpg"/>
+</div>
+<h4>Foam-jet AC service</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.75  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹649</p>
+<button class="add-btn" onclick="addToCart('Foam-jet AC service', 649)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Water Purifier Service &amp; Installation" src="images/plumber.jpg"/>
+</div>
+<h4>Water Purifier Service &amp; Installation</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.80</p>
+<p class="service-price">₹299</p>
+<button class="add-btn" onclick="addToCart('Water Purifier Service &amp; Installation', 299)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Roll-on waxing" src="images/waxing_service.jpg"/>
+</div>
+<h4>Roll-on waxing (Full arms, legs &amp; underarms)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.86</p>
+<p class="service-price">₹899</p>
+<button class="add-btn" onclick="addToCart('Roll-on waxing (Full arms, legs &amp; underarms)', 899)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Crystal rose pedicure" src="images/salon_express_pedicure.jpg"/>
+</div>
+<h4>Crystal rose pedicure</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.83</p>
+<p class="service-price">₹759</p>
+<button class="add-btn" onclick="addToCart('Crystal rose pedicure', 759)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="TV check-up" src="images/washing_machine_real.jpg"/>
+</div>
+<h4>TV check-up</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.77</p>
+<p class="service-price">₹249</p>
+<button class="add-btn" onclick="addToCart('TV check-up', 249)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Haircut for men" src="images/salon_haircut_men.jpg"/>
+</div>
+<h4>Haircut for men</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.90</p>
+<p class="service-price">₹459</p>
+<button class="add-btn" onclick="addToCart('Haircut for men', 459)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Haircut for boys" src="images/salon_haircut_boys.jpg"/>
+</div>
+<h4>Haircut for boys</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.83</p>
+<p class="service-price">₹259</p>
+<button class="add-btn" onclick="addToCart('Haircut for boys', 259)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Microwave check-up" src="images/image%20copy.png"/>
+</div>
+<h4>Microwave check-up</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.82  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹199</p>
+<button class="add-btn" onclick="addToCart('Microwave check-up', 199)" style="margin-top: auto;">Book now</button></div>
+</div>
+<button class="nav-btn next" id="nextBtnMostBooked"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- Salon for Women Section -->
+<section class="salon-section">
+<div class="section-header">
+<div class="section-title-group">
+<h2>Salon for Women</h2>
+<p class="section-subtitle">Pamper yourself at home</p>
+</div>
+<button class="see-all-btn">See all</button>
+</div>
+<div class="salon-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnSalon"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="salon-container" id="salon-carousel">
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Roll-on waxing" src="images/waxing_service.jpg"/>
+</div>
+<h4>Roll-on waxing (Full arms, legs &amp; underarms)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.86</p>
+<p class="service-price">₹899</p>
+<button class="add-btn" onclick="addToCart('Roll-on waxing (Full arms, legs &amp; underarms)', 899)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Crystal rose pedicure" src="images/salon_express_pedicure.jpg"/>
+</div>
+<h4>Crystal rose pedicure</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.83</p>
+<p class="service-price">₹759</p>
+<button class="add-btn" onclick="addToCart('Crystal rose pedicure', 759)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Power glow cleanup" src="images/spa_facial_real.jpg"/>
+</div>
+<h4>Power glow cleanup</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.86</p>
+<p class="service-price">₹699</p>
+<button class="add-btn" onclick="addToCart('Power glow cleanup', 699)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Spatula waxing" src="images/waxing_service.jpg"/>
+</div>
+<h4>Spatula waxing (Full arms, legs &amp; underarms)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.85</p>
+<p class="service-price">₹699</p>
+<button class="add-btn" onclick="addToCart('Spatula waxing (Full arms, legs &amp; underarms)', 699)" style="margin-top: auto;">Book now</button></div>
+</div>
+<button class="nav-btn next" id="nextBtnSalon"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- Spa for Women Section -->
+<section class="salon-section">
+<div class="section-header">
+<div class="section-title-group">
+<h2>Spa for Women</h2>
+</div>
+<button class="see-all-btn">See all</button>
+</div>
+<div class="salon-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnSpa"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="salon-container" id="spa-carousel">
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Leg relief massage" src="images/massage_leg_relief.jpg"/>
+</div>
+<h4>Leg relief massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.83</p>
+<p class="service-price">₹929</p>
+<button class="add-btn" onclick="addToCart('Leg relief massage', 929)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Quick comfort therapy" src="images/massage_quick_comfort.jpg"/>
+</div>
+<h4>Quick comfort therapy</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.80</p>
+<p class="service-price">₹1,199</p>
+<button class="add-btn" onclick="addToCart('Quick comfort therapy', 1199)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Top-to-toe stress relief massage" src="images/massage_top_toe_stress.jpg"/>
+</div>
+<h4>Top-to-toe stress relief massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.81</p>
+<p class="service-price">₹1,929</p>
+<button class="add-btn" onclick="addToCart('Top-to-toe stress relief massage', 1929)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Full body massage &amp; scrub" src="images/massage_back_relief.jpg"/>
+</div>
+<h4>Full body massage &amp; scrub</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.82</p>
+<p class="service-price">₹1,699</p>
+<button class="add-btn" onclick="addToCart('Full body massage &amp; scrub', 1699)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Back relief massage" src="images/grooming.jpg"/>
+</div>
+<h4>Back relief massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.84</p>
+<p class="service-price">₹929</p>
+<button class="add-btn" onclick="addToCart('Back relief massage', 929)" style="margin-top: auto;">Book now</button></div>
+</div>
+<button class="nav-btn next" id="nextBtnSpa"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- Cleaning Essentials Section -->
+<section class="salon-section">
+<div class="section-header">
+<div class="section-title-group">
+<h2>Cleaning Essentials</h2>
+<p class="section-subtitle">Monthly cleaning essential services</p>
+</div>
+<button class="see-all-btn">See all</button>
+</div>
+<div class="salon-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnCleaning"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="salon-container" id="cleaning-carousel">
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Dining table &amp; chairs cleaning" src="images/clean_dining_table.jpg"/>
+</div>
+<h4>Dining table &amp; chairs cleaning</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.84</p>
+<p class="service-price">₹499</p>
+<button class="add-btn" onclick="addToCart('Dining table &amp; chairs cleaning', 499)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Apartment termite control" src="images/clean_termite_control.jpg"/>
+</div>
+<h4>Apartment termite control</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.84</p>
+<p class="service-price">₹3,999</p>
+<button class="add-btn" onclick="addToCart('Apartment termite control', 3999)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Cockroach control (with utensil removal)" src="images/clean_cockroach_with_utensil.jpg"/>
+</div>
+<h4>Cockroach control (with utensil removal)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.79</p>
+<p class="service-price">₹1,249</p>
+<button class="add-btn" onclick="addToCart('Cockroach control (with utensil removal)', 1249)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Cockroach control (no utensil removal)" src="images/clean_cockroach_no_utensil.jpg"/>
+</div>
+<h4>Cockroach control (no utensil removal)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.80</p>
+<p class="service-price">₹999</p>
+<button class="add-btn" onclick="addToCart('Cockroach control (no utensil removal)', 999)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Bed bugs control" src="images/clean_termite_control.jpg"/>
+</div>
+<h4>Bed bugs control</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.77</p>
+<p class="service-price">₹1,899</p>
+<button class="add-btn" onclick="addToCart('Bed bugs control', 1899)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Apartment cockroach control (Utensil removal by customer)" src="images/clean_cockroach_no_utensil.jpg"/>
+</div>
+<h4>Apartment cockroach control (Utensil removal by customer)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.80</p>
+<p class="service-price">₹1,549</p>
+<button class="add-btn" onclick="addToCart('Apartment cockroach control (Utensil removal by customer)', 1549)" style="margin-top: auto;">Book now</button></div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Apartment cockroach control (with utensil removal)" src="images/clean_cockroach_with_utensil.jpg"/>
+</div>
+<h4>Apartment cockroach control (with utensil removal)</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.79</p>
+<p class="service-price">₹1,799</p>
+<button class="add-btn" onclick="addToCart('Apartment cockroach control (with utensil removal)', 1799)" style="margin-top: auto;">Book now</button></div>
+</div>
+<button class="nav-btn next" id="nextBtnCleaning"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- Massage for Men Section -->
+<section class="salon-section">
+<div class="section-header">
+<div class="section-title-group">
+<h2>Massage for Men</h2>
+</div>
+</div>
+<div class="salon-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnMassage"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="salon-container" id="massage-carousel">
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Quick comfort therapy" src="images/massage_quick_comfort_men.jpg"/>
+</div>
+<h4>Quick comfort therapy</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.81</p>
+<p class="service-price">₹1,199</p>
+<button class="add-btn" onclick="addToCart('Quick comfort therapy', 1199)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Leg relief massage" src="images/massage_leg_relief_men.jpg"/>
+</div>
+<h4>Leg relief massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.85</p>
+<p class="service-price">₹919</p>
+<button class="add-btn" onclick="addToCart('Leg relief massage', 919)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Top-to-toe stress relief massage" src="images/massage_top_toe_stress_men.jpg"/>
+</div>
+<h4>Top-to-toe stress relief massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.83</p>
+<p class="service-price">₹1,979</p>
+<button class="add-btn" onclick="addToCart('Top-to-toe stress relief massage', 1979)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Back relief massage" src="images/massage_back_relief_men.jpg"/>
+</div>
+<h4>Back relief massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.86</p>
+<p class="service-price">₹919</p>
+<button class="add-btn" onclick="addToCart('Back relief massage', 919)" style="margin-top: auto;">Book now</button>
+</div>
+</div>
+<button class="nav-btn next" id="nextBtnMassage"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+<!-- Salon for Men Section -->
+<section class="salon-section">
+<div class="section-header">
+<div class="section-title-group">
+<h2>Salon for men</h2>
+<p class="section-subtitle">Grooming essentials</p>
+</div>
+<button class="see-all-btn">See all</button>
+</div>
+<div class="salon-wrapper" style="position: relative;">
+<button class="nav-btn prev" id="prevBtnSalonMen"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="salon-container" id="salon-men-carousel">
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Haircut for men" src="images/salon_haircut_men.jpg"/>
+</div>
+<h4>Haircut for men</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.86  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹259</p>
+<button class="add-btn" onclick="addToCart('Haircut for men', 259)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Haircut for boys" src="images/salon_haircut_boys.jpg"/>
+</div>
+<h4>Haircut for boys</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.83  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹259</p>
+<button class="add-btn" onclick="addToCart('Haircut for boys', 259)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Head, neck &amp; shoulder massage" src="images/salon_head_massage.jpg"/>
+</div>
+<h4>Head, neck &amp; shoulder massage</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.80  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹299</p>
+<button class="add-btn" onclick="addToCart('Head, neck &amp; shoulder massage', 299)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Brightening lemon deep cleanse pedicure" src="images/salon_pedicure_men.jpg"/>
+</div>
+<h4>Brightening lemon deep cleanse pedicure</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.78  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹799</p>
+<button class="add-btn" onclick="addToCart('Brightening lemon deep cleanse pedicure', 799)" style="margin-top: auto;">Book now</button>
+</div>
+<div class="most-booked-item">
+<div class="most-booked-img-wrapper">
+<img alt="Brightening lemon express pedicure" src="images/salon_express_pedicure.jpg"/>
+</div>
+<h4>Brightening lemon express pedicure</h4>
+<p class="service-meta"><i class="fa-solid fa-star"></i> 4.76  •  <span class="instant"><i class="fa-solid fa-bolt"></i> Instant</span></p>
+<p class="service-price">₹549</p>
+<button class="add-btn" onclick="addToCart('Brightening lemon express pedicure', 549)" style="margin-top: auto;">Book now</button>
+</div>
+</div>
+<button class="nav-btn next" id="nextBtnSalonMen"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+</section>
+</main>
+<!-- Modal -->
+<div class="modal-overlay hidden" id="beauty-modal">
+<div class="modal-content">
+<button class="modal-close" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Women's Salon &amp; Spa</h3>
+<div class="modal-grid">
+<div class="modal-item" id="salon-options-trigger" style="cursor: pointer;">
+<img alt="Salon" src="images/beauty.jpg"/>
+<p>Salon for Women</p>
+</div>
+<div class="modal-item" id="spa-for-women-trigger" style="cursor: pointer;">
+<img alt="Spa" src="images/beauty.jpg"/>
+<p>Spa for Women</p>
+</div>
+<a class="modal-item" href="hair-studio.html" style="text-decoration: none;">
+<img alt="Hair" src="images/beauty.jpg"/>
+<p>Hair Studio for Women</p>
+</a>
+<a class="modal-item" href="makeup.html" style="text-decoration: none;">
+<img alt="Makeup" src="images/beauty.jpg"/>
+<p>Makeup, Saree &amp; Styling</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Spa for Women Options Modal -->
+<div class="modal-overlay hidden" id="spa-for-women-options-modal">
+<div class="modal-content" style="max-width: 550px;">
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<button id="close-spa-for-women-options-btn" style="background: none; border: none; font-size: 20px; cursor: pointer; margin-right: 20px; color: #000;"><i class="fa-solid fa-arrow-left"></i></button>
+<h3 class="modal-title" style="margin-bottom: 0;">Select your preference</h3>
+</div>
+<div class="preference-list">
+<a class="preference-item" href="spa-luxe.html" style="text-decoration: none; color: inherit; display: flex; align-items: flex-start; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; background: #fff; transition: box-shadow 0.2s;">
+<div style="width: 80px; border-radius: 8px; overflow: hidden; margin-right: 20px; flex-shrink: 0; background: #f5f5f5; text-align: center;">
+<span style="display: block; font-size: 10px; background: #c89a3f; color: #fff; padding: 4px 0; font-weight: 600;">⭐ Top rated</span>
+<img alt="Luxe" src="images/beauty.jpg" style="width: 100%; height: 80px; object-fit: cover;"/>
+</div>
+<div style="flex-grow: 1;">
+<h4 style="margin: 0 0 5px 0; font-size: 18px; color: #000;">Luxe</h4>
+<p style="font-size: 14px; margin: 0 0 8px 0; color: #333;">Starts at ₹898</p>
+<p style="font-size: 13px; color: #666; margin: 0; line-height: 1.4;">Curated therapies with only Highly-rated therapists &amp; oils</p>
+</div>
+<div style="color: #000; display: flex; align-items: center; height: 100%;"><i class="fa-solid fa-chevron-right"></i></div>
+</a>
+<a class="preference-item" href="spa-prime.html" style="text-decoration: none; color: inherit; display: flex; align-items: flex-start; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fff; transition: box-shadow 0.2s;">
+<div style="width: 80px; border-radius: 8px; overflow: hidden; margin-right: 20px; flex-shrink: 0; background: #f5f5f5;">
+<img alt="Prime" src="images/beauty.jpg" style="width: 100%; height: 80px; object-fit: cover;"/>
+</div>
+<div style="flex-grow: 1;">
+<h4 style="margin: 0 0 5px 0; font-size: 18px; color: #000;">Prime</h4>
+<p style="font-size: 14px; margin: 0 0 8px 0; color: #333;">Starts at ₹699</p>
+<p style="font-size: 13px; color: #666; margin: 0; line-height: 1.4;">Regular oil massages with standard techniques &amp; therapist</p>
+</div>
+<div style="color: #000; display: flex; align-items: center; height: 100%;"><i class="fa-solid fa-chevron-right"></i></div>
+</a>
+</div>
+</div>
+</div>
+<!-- Men's Modal -->
+<div class="modal-overlay hidden" id="mens-modal">
+<div class="modal-content">
+<button class="modal-close" id="close-mens-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Men's Salon &amp; Massage</h3>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<div class="modal-item" id="salon-for-men-trigger" style="cursor: pointer;">
+<img alt="Salon Men" src="images/grooming.jpg"/>
+<p>Salon for Men</p>
+</div>
+<div class="modal-item" id="massage-for-men-trigger" style="cursor: pointer;">
+<img alt="Massage Men" src="images/grooming.jpg"/>
+<p>Massage for Men</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Salon for Men Options Modal -->
+<div class="modal-overlay hidden" id="salon-for-men-options-modal">
+<div class="modal-content" style="max-width: 550px;">
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<button id="close-salon-for-men-options-btn" style="background: none; border: none; font-size: 20px; cursor: pointer; margin-right: 20px; color: #000;"><i class="fa-solid fa-arrow-left"></i></button>
+<h3 class="modal-title" style="margin-bottom: 0;">Select your preference</h3>
+</div>
+<div class="preference-list">
+<a class="preference-item" href="salon-royale.html" style="text-decoration: none; color: inherit; display: flex; align-items: flex-start; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; background: #fff; transition: box-shadow 0.2s;">
+<div style="width: 80px; border-radius: 8px; overflow: hidden; margin-right: 20px; flex-shrink: 0; background: #f5f5f5; text-align: center;">
+<span style="display: block; font-size: 10px; background: #c89a3f; color: #fff; padding: 4px 0; font-weight: 600;">⭐ Top rated pros</span>
+<img alt="Royale" src="images/grooming.jpg" style="width: 100%; height: 80px; object-fit: cover;"/>
+</div>
+<div style="flex-grow: 1;">
+<h4 style="margin: 0 0 5px 0; font-size: 18px; color: #000;">Royale</h4>
+<p style="font-size: 12px; color: #777; margin: 0 0 8px 0; font-weight: 500;">INOA  |  REPÊCHAGE  |  O3+</p>
+<p style="font-size: 14px; margin: 0 0 8px 0; color: #333;">Starts at ₹449</p>
+<p style="font-size: 13px; color: #666; margin: 0; line-height: 1.4;">Only top professionals for advanced cuts, beard styling &amp; facials.</p>
+</div>
+<div style="color: #000; display: flex; align-items: center; height: 100%;"><i class="fa-solid fa-chevron-right"></i></div>
+</a>
+<a class="preference-item" href="salon-prime.html" style="text-decoration: none; color: inherit; display: flex; align-items: flex-start; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fff; transition: box-shadow 0.2s;">
+<div style="width: 80px; border-radius: 8px; overflow: hidden; margin-right: 20px; flex-shrink: 0; background: #f5f5f5;">
+<img alt="Prime" src="images/grooming.jpg" style="width: 100%; height: 80px; object-fit: cover;"/>
+</div>
+<div style="flex-grow: 1;">
+<h4 style="margin: 0 0 5px 0; font-size: 18px; color: #000;">Prime</h4>
+<p style="font-size: 12px; color: #777; margin: 0 0 8px 0; font-weight: 500;">L'ORÉAL  |  BOMBAY SHAVING</p>
+<p style="font-size: 14px; margin: 0 0 8px 0; color: #333;">Starts at ₹249</p>
+<p style="font-size: 13px; color: #666; margin: 0; line-height: 1.4;">Everyday cuts, color &amp; cleanup.</p>
+</div>
+<div style="color: #000; display: flex; align-items: center; height: 100%;"><i class="fa-solid fa-chevron-right"></i></div>
+</a>
+</div>
+</div>
+</div>
+<!-- Massage for Men Options Modal -->
+<div class="modal-overlay hidden" id="massage-for-men-options-modal">
+<div class="modal-content" style="max-width: 550px;">
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<button id="close-massage-for-men-options-btn" style="background: none; border: none; font-size: 20px; cursor: pointer; margin-right: 20px; color: #000;"><i class="fa-solid fa-arrow-left"></i></button>
+<h3 class="modal-title" style="margin-bottom: 0;">Select your preference</h3>
+</div>
+<div class="preference-list">
+<a class="preference-item" href="massage-royale.html" style="text-decoration: none; color: inherit; display: flex; align-items: flex-start; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; background: #fff; transition: box-shadow 0.2s;">
+<div style="width: 80px; border-radius: 8px; overflow: hidden; margin-right: 20px; flex-shrink: 0; background: #f5f5f5; text-align: center;">
+<span style="display: block; font-size: 10px; background: #c89a3f; color: #fff; padding: 4px 0; font-weight: 600;">⭐ Top rated</span>
+<img alt="Royale" src="images/grooming.jpg" style="width: 100%; height: 80px; object-fit: cover;"/>
+</div>
+<div style="flex-grow: 1;">
+<h4 style="margin: 0 0 5px 0; font-size: 18px; color: #000;">Royale</h4>
+<p style="font-size: 14px; margin: 0 0 8px 0; color: #333;">Starts at ₹899</p>
+<p style="font-size: 13px; color: #666; margin: 0; line-height: 1.4;">Curated therapies with only Highly-rated therapists &amp; oils</p>
+</div>
+<div style="color: #000; display: flex; align-items: center; height: 100%;"><i class="fa-solid fa-chevron-right"></i></div>
+</a>
+<a class="preference-item" href="salon-prime.html#massage-section" style="text-decoration: none; color: inherit; display: flex; align-items: flex-start; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fff; transition: box-shadow 0.2s;">
+<div style="width: 80px; border-radius: 8px; overflow: hidden; margin-right: 20px; flex-shrink: 0; background: #f5f5f5;">
+<img alt="Prime" src="images/grooming.jpg" style="width: 100%; height: 80px; object-fit: cover;"/>
+</div>
+<div style="flex-grow: 1;">
+<h4 style="margin: 0 0 5px 0; font-size: 18px; color: #000;">Prime</h4>
+<p style="font-size: 14px; margin: 0 0 8px 0; color: #333;">Starts at ₹699</p>
+<p style="font-size: 13px; color: #666; margin: 0; line-height: 1.4;">Regular oil massages with standard techniques &amp; therapist</p>
+</div>
+<div style="color: #000; display: flex; align-items: center; height: 100%;"><i class="fa-solid fa-chevron-right"></i></div>
+</a>
+</div>
+</div>
+</div>
+<!-- AC Modal -->
+<div class="modal-overlay hidden" id="ac-modal">
+<div class="modal-content">
+<button class="modal-close" id="close-ac-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">AC &amp; Appliance Repair</h3>
+<h4 class="modal-subtitle">Large appliances</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="ac-service.html" style="text-decoration: none;">
+<div class="img-wrapper">
+<img alt="AC" src="images/ac.jpg"/>
+<span class="delivery-badge-small">44 mins</span>
+</div>
+<p style="margin-top: 10px;">AC</p>
+</a>
+<a class="modal-item" href="appliance-repair.html#washing-machine" style="text-decoration: none;">
+<img alt="Washing Machine" src="images/image%20copy%202.png"/>
+<p style="margin-top: 10px;">Washing Machine</p>
+</a>
+<a class="modal-item" href="refrigerator.html" style="text-decoration: none;">
+<div class="img-wrapper">
+<img alt="Refrigerator" src="images/image%20copy%203.png"/>
+<span class="delivery-badge-small">43 mins</span>
+</div>
+<p style="margin-top: 10px; color: #000;">Refrigerator</p>
+</a>
+<a class="modal-item" href="television.html" style="text-decoration: none;">
+<img alt="Television" src="images/image%20copy%204.png"/>
+<p style="margin-top: 10px; color: #000;">Television</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Other appliances</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="chimney.html" style="text-decoration: none;">
+<img alt="Chimney" src="images/chimney.png"/>
+<p style="margin-top: 10px; color: #000;">Chimney</p>
+</a>
+<a class="modal-item" href="microwave.html" style="text-decoration: none;">
+<div class="img-wrapper">
+<img alt="Microwave" src="images/microwave.png"/>
+<span class="delivery-badge-small">44 mins</span>
+</div>
+<p style="margin-top: 10px; color: #000;">Microwave</p>
+</a>
+<a class="modal-item" href="water-purifier.html" style="text-decoration: none;">
+<img alt="RO/Water Purifier" src="images/ro_purifier.png"/>
+<p style="margin-top: 10px; color: #000;">RO/Water Purifier</p>
+</a>
+</div>
+</div>
+</div>
+<!-- EPC Modal -->
+<div class="modal-overlay hidden" id="epc-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-epc-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Electrician, Plumber &amp; Carpenter</h3>
+<h4 class="modal-subtitle">Repairs</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="electrician.html" style="text-decoration: none;">
+<img alt="Electrician" src="images/electrician_icon.jpg"/><p>Electrician</p>
+</a>
+<a class="modal-item" href="plumber.html" style="text-decoration: none;">
+<img alt="Plumber" src="images/plumber.jpg"/><p>Plumber</p>
+</a>
+<a class="modal-item" href="carpenter.html" style="text-decoration: none;">
+<img alt="Carpenter" src="images/carpenter_icon.jpg"/><p>Carpenter</p>
+</a>
+<a class="modal-item" href="wood-furniture-polish.html" style="text-decoration: none;">
+<img alt="Wood Polish" src="images/renovation.jpg"/><p>Wood &amp; Furniture Polish</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Installations &amp; other services</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="fan-installation.html" style="text-decoration: none;">
+<img alt="Fan" src="images/tools.jpg"/><p>Fan Installation</p>
+</a>
+<a class="modal-item" href="furniture-assembly.html" style="text-decoration: none;">
+<img alt="Assembly" src="images/carpenter_icon.jpg"/><p>Furniture Assembly</p>
+</a>
+<a class="modal-item" href="geyser-service.html" style="text-decoration: none;">
+<img alt="Geyser" src="images/plumber.jpg"/><p>Geyser Service &amp; Repair</p>
+</a>
+<a class="modal-item" href="ikea-furniture.html" style="text-decoration: none;">
+<img alt="IKEA" src="images/tools.jpg"/><p>IKEA Furniture Assembly</p>
+</a>
+<a class="modal-item" href="tile-grouting.html" style="text-decoration: none;">
+<img alt="Tile" src="images/cleaning.jpg"/><p>Tile Grouting &amp; Sealant</p>
+</a>
+<a class="modal-item" href="festival-lights.html" style="text-decoration: none;">
+<img alt="Lights" src="images/electrician_icon.jpg"/>
+<p>Festival Lights Installation</p>
+</a>
+<a class="modal-item" href="#" onclick="event.preventDefault();" style="text-decoration: none;">
+<img alt="Panels" src="images/renovation.jpg"/><p>Wall Panels by Revamp</p>
+</a>
+</div>
+</div>
+</div>
+
+<!-- Cleaning Modal -->
+<div class="modal-overlay hidden" id="cleaning-modal">
+<div class="modal-content">
+<button class="modal-close" id="close-cleaning-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Cleaning &amp; Pest Control</h3>
+<h4 class="modal-subtitle">Cleaning</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="bathroom-cleaning.html" style="text-decoration: none;">
+<div class="img-wrapper" style="position: relative; display: flex; justify-content: center;">
+<img alt="Bathroom Cleaning" src="images/cleaning.jpg"/>
+<span class="delivery-badge-small" style="background: white; color: #2e7d32; border: 1px solid #2e7d32; font-size: 10px; padding: 2px 6px; border-radius: 4px; position: absolute; bottom: -10px; white-space: nowrap; font-weight: bold;">29 mins</span>
+</div>
+<p style="margin-top: 15px;">Bathroom Cleaning</p>
+</a>
+<a class="modal-item" href="kitchen-cleaning.html" style="text-decoration: none;">
+<img alt="Kitchen cleaning" src="images/kitchen.jpg"/>
+<p>Kitchen cleaning</p>
+</a>
+<a class="modal-item" href="living-bedroom.html" style="text-decoration: none;">
+<img alt="Living &amp; Bedroom Cleaning" src="images/cleaning.jpg"/>
+<p>Living &amp; Bedroom Cleaning</p>
+</a>
+<a class="modal-item" href="cleaning.html#fullhome" style="text-decoration: none;">
+<img alt="Full Home/ By Room Cleaning" src="images/homecare.jpg"/>
+<p>Full Home/ By Room Cleaning</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Pest Control</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="pest-control.html#cockroach" style="text-decoration: none;">
+<img alt="Cockroach Control" src="images/cleaning.jpg"/>
+<p>Cockroach Control</p>
+</a>
+<a class="modal-item" href="pest-control.html#termite" style="text-decoration: none;">
+<img alt="Termite Control" src="images/cleaning.jpg"/>
+<p>Termite Control</p>
+</a>
+<a class="modal-item" href="pest-control.html#ants" style="text-decoration: none;">
+<img alt="Ants &amp; Bed Bugs Control" src="images/cleaning.jpg"/>
+<p>Ants &amp; Bed Bugs Control</p>
+</a>
+<a class="modal-item" href="pest-control.html#leak" style="text-decoration: none;">
+<div class="img-wrapper" style="position: relative; display: flex; justify-content: center;">
+<img alt="Leak &amp; gap sealing" src="images/tools.jpg"/>
+<span class="new-badge" style="background: #900c3f; color: white; font-size: 10px; padding: 2px 6px; border-radius: 4px; position: absolute; bottom: -10px; font-weight: bold; white-space: nowrap;">New</span>
+</div>
+<p style="margin-top: 15px;">Leak &amp; gap sealing</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Deep Restore</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="tile-grouting.html" style="text-decoration: none; color: inherit;">
+<img alt="Tile Grouting &amp; Sealant" src="images/kitchen.jpg"/>
+<p>Tile Grouting &amp; Sealant</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Renovation Modal -->
+<div class="modal-overlay hidden" id="renovation-modal">
+<div class="modal-content">
+<button class="modal-close" id="close-renovation-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Home Painting &amp; Upgrade</h3>
+<h4 class="modal-subtitle">Painting &amp; waterproofing</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<div class="modal-item">
+<img alt="Walls &amp; Rooms Painting" src="images/renovation.jpg"/>
+<p>Walls &amp; Rooms Painting</p>
+</div>
+</div>
+<h4 class="modal-subtitle">Quick fix</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="wood-furniture-polish.html" style="text-decoration: none; color: inherit;">
+<img alt="Wood &amp; Furniture Polish" src="images/carpenter.jpg"/>
+<p>Wood &amp; Furniture Polish</p>
+</a>
+<a class="modal-item" href="tile-grouting.html" style="text-decoration: none; color: inherit;">
+<img alt="Tile Grouting &amp; Sealant" src="images/kitchen.jpg"/>
+<p>Tile Grouting &amp; Sealant</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Salon Options Modal -->
+<div class="modal-overlay hidden" id="salon-options-modal">
+<div class="modal-content options-modal-content">
+<button class="modal-close" id="close-salon-options-modal-btn" style="z-index: 10; top: 15px; left: 15px; right: auto; background: white; border-radius: 50%; width: 30px; height: 30px; border: none; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-arrow-left"></i></button>
+<div class="options-modal-banner" style="background: #193B4D; color: white;">
+<div class="options-banner-text">
+<span style="background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-bottom: 10px; display: inline-block;">New launch</span>
+<h2>Derma facials</h2>
+<p style="font-size: 14px; opacity: 0.9;">Targeted actives, powered by Cryofacial Cold Therapy</p>
+</div>
+<img alt="Derma facials" src="images/beauty.jpg"/>
+</div>
+<div class="options-modal-body">
+<a href="salon-luxe.html" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px; position: relative;">
+<span style="background: #d4a373; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; position: absolute; top: -10px; left: 0;">★ Top rated pros</span>
+<div style="display: flex; align-items: center; justify-content: space-between; margin-top: 15px;">
+<div style="display: flex; align-items: center; gap: 15px;">
+<img alt="Luxe" src="images/beauty.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"/>
+<div>
+<h3 style="font-size: 16px; margin: 0;">Luxe</h3>
+<p style="font-size: 12px; color: #666; margin: 5px 0;">FOREST ESSENTIALS | CIRÉPIL</p>
+<p style="font-size: 12px; margin: 0;">Starting at ₹799</p>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right" style="color: #ccc;"></i>
+</div>
+</a>
+<a href="salon-prime.html" style="text-decoration: none; color: inherit; display: block;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<div style="display: flex; align-items: center; gap: 15px;">
+<img alt="Prime" src="images/beauty.jpg" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"/>
+<div>
+<h3 style="font-size: 16px; margin: 0;">Prime</h3>
+<p style="font-size: 12px; color: #008800; font-weight: bold; margin: 5px 0;">⚡ Arriving in 44 mins</p>
+<p style="font-size: 12px; margin: 0;">O3+ | RICA</p>
+</div>
+</div>
+<i class="fa-solid fa-chevron-right" style="color: #ccc;"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- Home Security Modal -->
+<div class="modal-overlay hidden" id="security-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-security-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Home Security, Solar &amp; Water</h3>
+<h4 class="modal-subtitle">Home Security</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="cctv-services.html" style="text-decoration: none;">
+<img alt="CCTV Camera" src="images/security.jpg"/>
+<p>CCTV Camera Installation</p>
+</a>
+<a class="modal-item" href="smart-locks.html" style="text-decoration: none;">
+<img alt="Smart Locks" src="images/homecare.jpg"/>
+<p>Smart Locks &amp; Doorbells</p>
+</a>
+<a class="modal-item" href="home-alarm.html" style="text-decoration: none;">
+<img alt="Home Alarm" src="images/security.jpg"/>
+<p>Home Alarm Systems</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Solar Services</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="solar-installation.html" style="text-decoration: none;">
+<img alt="Solar Panel" src="images/ac.jpg"/>
+<p>Solar Panel Installation</p>
+</a>
+<a class="modal-item" href="solar-cleaning.html" style="text-decoration: none;">
+<img alt="Solar Panel Cleaning" src="images/cleaning.jpg"/>
+<p>Solar Panel Cleaning</p>
+</a>
+<a class="modal-item" href="solar-water-heater.html" style="text-decoration: none;">
+<img alt="Solar Water Heater" src="images/plumber.jpg"/>
+<p>Solar Water Heater</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Water Solutions</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="ro-service.html" style="text-decoration: none;">
+<img alt="RO Service" src="images/plumber.jpg"/>
+<p>RO / Water Purifier</p>
+</a>
+<a class="modal-item" href="water-tank-cleaning.html" style="text-decoration: none;">
+<img alt="Water Tank Cleaning" src="images/cleaning.jpg"/>
+<p>Water Tank Cleaning</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Logistics Modal -->
+<div class="modal-overlay hidden" id="logistics-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-logistics-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Home Care, Support &amp; Logistics</h3>
+<h4 class="modal-subtitle">Logistics &amp; Moving</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="packers-movers.html" style="text-decoration: none;">
+<img alt="Packers &amp; Movers" src="images/packers_icon.jpg"/>
+<p>Packers &amp; Movers</p>
+</a>
+<a class="modal-item" href="mini-truck.html" style="text-decoration: none;">
+<img alt="Mini Truck" src="images/truck_icon.jpg"/>
+<p>Mini Truck on Rent</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Daily Home Support</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="driver-on-demand.html" style="text-decoration: none;">
+<img alt="Driver" src="images/carpenter.jpg"/>
+<p>Driver on Demand</p>
+</a>
+<a class="modal-item" href="maid-helper.html" style="text-decoration: none;">
+<img alt="Maid" src="images/maid_icon.jpg"/>
+<p>Maid / Helper</p>
+</a>
+<a class="modal-item" href="cook-on-demand.html" style="text-decoration: none;">
+<img alt="Cook" src="images/cook_icon.jpg"/>
+<p>Cook on Demand</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Specialized Care</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="elder-care.html" style="text-decoration: none;">
+<img alt="Elder Care" src="images/beauty.jpg"/>
+<p>Elder / Patient Care</p>
+</a>
+<a class="modal-item" href="babysitting.html" style="text-decoration: none;">
+<img alt="Babysitting" src="images/grooming.jpg"/>
+<p>Babysitting / Nanny</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Fabrication Modal -->
+<div class="modal-overlay hidden" id="fabrication-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-fabrication-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Fabrication, Grills &amp; Roofing</h3>
+<h4 class="modal-subtitle">Window Grills &amp; Balcony Railings</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="grills-railings.html" style="text-decoration: none;">
+<img alt="Grills &amp; Railings" src="images/grills_icon.jpg"/>
+<p>Window Grills &amp; Balcony Railings</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Gates &amp; Doors</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="gates-doors.html" style="text-decoration: none;">
+<img alt="Gates &amp; Doors" src="images/gates_icon.jpg"/>
+<p>Gates &amp; Doors</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Sheds &amp; Roofing</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="sheds-roofing.html" style="text-decoration: none;">
+<img alt="Sheds &amp; Roofing" src="images/roofing_icon.jpg"/>
+<p>Sheds &amp; Roofing</p>
+</a>
+</div>
+<h4 class="modal-subtitle">Welding &amp; Repair Services</h4>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px;">
+<a class="modal-item" href="welding-repair.html" style="text-decoration: none;">
+<img alt="Welding &amp; Repair" src="images/plumber.jpg"/>
+<p>Welding &amp; Repair</p>
+</a>
+</div>
+</div>
+</div>
+<!-- AC Modal -->
+<div class="modal-overlay hidden" id="ac-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-ac-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">AC, Appliance &amp; Repair</h3>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="ac-repair.html" style="text-decoration: none;"><img alt="AC" src="images/ac.jpg"/><p>AC Repair</p></a>
+<a class="modal-item" href="appliance-repair.html#washing-machine" style="text-decoration: none;"><img alt="Washing" src="images/washing_machine.jpg"/><p>Washing Machine</p></a>
+<a class="modal-item" href="appliance-repair.html#fridge" style="text-decoration: none;"><img alt="Fridge" src="images/refrigerator.jpg"/><p>Refrigerator</p></a>
+</div>
+</div>
+</div>
+<!-- EPC Modal -->
+<!-- Cleaning Modal -->
+<div class="modal-overlay hidden" id="cleaning-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-cleaning-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Cleaning, Pest Control &amp; Safety</h3>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="full-home-cleaning.html" style="text-decoration: none;"><img alt="Cleaning" src="images/cleaning.jpg"/><p>Full Home Cleaning</p></a>
+<a class="modal-item" href="pest-control.html" style="text-decoration: none;"><img alt="Pest" src="images/pest_control_icon.jpg"/><p>Pest Control</p></a>
+</div>
+</div>
+</div>
+<!-- Reno Modal -->
+<div class="modal-overlay hidden" id="reno-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-reno-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Home Renovation &amp; Interior</h3>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="full-home-renovation.html" style="text-decoration: none;"><img alt="Reno" src="images/renovation.jpg"/><p>Full Home Renovation</p></a>
+<a class="modal-item" href="painting.html" style="text-decoration: none;"><img alt="Paint" src="images/painting_icon.jpg"/><p>Painting</p></a>
+</div>
+</div>
+</div>
+<!-- Beauty Modal -->
+<div class="modal-overlay hidden" id="beauty-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-beauty-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Women's Beauty &amp; Spa</h3>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="womens-spa.html" style="text-decoration: none;"><img alt="Beauty" src="images/beauty.jpg"/><p>Salon for Women</p></a>
+<a class="modal-item" href="womens-spa.html" style="text-decoration: none;"><img alt="Spa" src="images/grooming.jpg"/><p>Spa for Women</p></a>
+</div>
+</div>
+</div>
+<!-- Grooming Modal -->
+<div class="modal-overlay hidden" id="grooming-modal">
+<div class="modal-content" style="max-width: 600px;">
+<button class="modal-close" id="close-grooming-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+<h3 class="modal-title">Men's Grooming &amp; Massage</h3>
+<div class="modal-grid" style="justify-content: flex-start; gap: 20px; margin-bottom: 25px;">
+<a class="modal-item" href="mens-grooming.html" style="text-decoration: none;"><img alt="Men" src="images/grooming.jpg"/><p>Salon for Men</p></a>
+<a class="modal-item" href="mens-grooming.html" style="text-decoration: none;"><img alt="Massage" src="images/beauty.jpg"/><p>Massage for Men</p></a>
+</div>
+</div>
+</div>
+<script src="app.js?v=7"></script>
+<script src="common.js"></script>
+<script src="cart.js"></script>
+<!-- Cart Sidebar -->
+<div class="modal-overlay hidden" id="cart-sidebar" style="z-index: 1000;">
+<div class="modal-content" style="max-width: 400px; height: 100%; position: absolute; right: 0; top: 0; border-radius: 0; display: flex; flex-direction: column; background: #fff;">
+<button class="modal-close" id="close-cart-btn" style="right: auto; left: -40px; top: 15px; color: white; background: rgba(0,0,0,0.5);"><i class="fa-solid fa-xmark"></i></button>
+<div style="padding: 20px; border-bottom: 1px solid #eee;">
+<h2 style="margin: 0; font-size: 20px;">Your Cart</h2>
+</div>
+<div id="cart-items-container" style="flex: 1; overflow-y: auto; padding: 20px;">
+<!-- Items will be injected here -->
+</div>
+<div style="padding: 20px; border-top: 1px solid #eee; background: #f9f9f9;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-weight: bold; font-size: 18px;">
+<span>Total:</span>
+<span id="cart-total-price">₹0</span>
+</div>
+<button id="checkout-btn" style="width: 100%; padding: 15px; background: #000; color: #fff; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer;">Proceed to Checkout</button>
+</div>
+</div>
+</div>
+<style>
+.footer {
+    background: #fff;
+    color: #333;
+    border-top: 1px solid #eaeaea;
+    padding: 60px 40px;
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+.footer-col ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.footer-col ul li a:hover {
+    color: #000;
+}
+.footer-logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+}
+.social-icons a {
+    color: #333;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #6366f1;
+}
+@media (max-width: 768px) {
+    .footer { padding: 40px 20px; }
+    .footer-container { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+    .social-icons { margin-top: 10px; }
+    .social-icons a { margin: 0 10px; }
+}
+@media (max-width: 480px) {
+    .footer-container { grid-template-columns: 1fr; }
+}
+</style>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-col" style="grid-column: span 2;">
+<a class="footer-logo" href="index.html" style="display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; text-decoration: none; margin-bottom: 15px;">
+<img src="images/logo.png" alt="Joamex Icon" style="height: 35px; border-radius: 8px;">
+<img src="images/logo-text.png" alt="Joamex Text" style="height: 12px;">
+</a>
+<p style="color: #666; font-size: 14px; line-height: 1.6; max-width: 300px;">
+                Your trusted partner for premium home services. From grooming to appliance repair, we deliver excellence right at your doorstep.
+            </p>
+</div>
+<div class="footer-col">
+<h3>Company</h3>
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>For Customers</h3>
+<ul>
+<li><a href="#">UC Reviews</a></li>
+<li><a href="#">Categories near you</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<div>© 2024 Joamex Technologies Ltd. All rights reserved.</div>
+<div class="social-icons">
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</div>
+</footer>
+<script src="common.js?v=2001"></script>
+<script src="cart.js"></script>
+</body>
+</html>

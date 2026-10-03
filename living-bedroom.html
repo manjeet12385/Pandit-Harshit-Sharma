@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living & Bedroom Cleaning - Joamex</title>
+    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .kitchen-page {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .kitchen-left {
+            width: 320px;
+            flex-shrink: 0;
+        }
+
+        .kitchen-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .kitchen-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 8px 0;
+            line-height: 1.2;
+        }
+
+        .kitchen-rating {
+            font-size: 13px;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .instant-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .instant-top {
+            background: #1e8f52;
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .instant-bottom {
+            font-size: 11px;
+            color: #334155;
+            padding: 4px 12px;
+            font-weight: 500;
+        }
+
+        .select-service-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .select-service-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            margin: 0 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .service-grid-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            row-gap: 25px;
+        }
+
+        .service-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .service-option-icon {
+            width: 60px;
+            height: 60px;
+            background: #fdfbf7;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            border: 1px solid #f1f5f9;
+            overflow: hidden;
+        }
+
+        .service-option-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-option-text {
+            font-size: 11px;
+            font-weight: 500;
+            color: #334155;
+            line-height: 1.3;
+        }
+
+        .kitchen-right {
+            flex-grow: 1;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: 450px;
+        }
+
+        .kitchen-banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .kitchen-banner-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .kitchen-banner-text {
+            font-size: 38px;
+            color: white;
+            font-weight: 700;
+            line-height: 1.3;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            max-width: 400px;
+        }
+
+        .slider-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            height: 3px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            z-index: 2;
+        }
+
+        .slider-progress {
+            height: 100%;
+            width: 25%;
+            background: white;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body style="background-color: #fdfbf7;">
+
+    <!-- Header -->
+    <header class="header">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="index.html" style="color: #000; font-size: 20px; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="index.html" class="logo" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none;">
+                <img src="images/logo.png" alt="Joamex Icon" style="height: 35px; border-radius: 8px;">
+                <img src="images/logo-text.png" alt="Joamex Text" style="height: 12px;">
+            </a>
+        </div>
+        <div class="search-container" id="header-search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search for services">
+        </div>
+        <div class="header-actions">
+            <button class="location-btn"><i class="fa-solid fa-location-dot"></i> Use Current Location</button>
+            <button class="partner-btn"><i class="fa-solid fa-handshake"></i> Join as Partner</button>
+            <div class="icon-btn"><i class="fa-regular fa-user"></i></div>
+            <div class="icon-btn" id="open-cart-btn" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-badge" style="position: absolute; top: -5px; right: -5px; background: #e53935; color: white; font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 10px; display: none;">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="kitchen-page">
+        <!-- Left Sidebar -->
+        <div class="kitchen-left">
+            <div class="kitchen-header">
+                <div>
+                    <h1 class="kitchen-title">Living &amp;<br>Bedroom...</h1>
+                    <div class="kitchen-rating">
+                        <i class="fa-solid fa-star" style="font-size: 11px;"></i>
+                        <strong>4.81</strong> (2.7 M bookings)
+                    </div>
+                </div>
+                <div class="instant-badge">
+                    <div class="instant-top"><i class="fa-solid fa-bolt"></i> Instant</div>
+                    <div class="instant-bottom">In 54 mins</div>
+                </div>
+            </div>
+
+            <div class="select-service-box">
+                <h3 class="select-service-title">Select a service</h3>
+                <div class="service-grid-box">
+                    <div class="service-option" onclick="showSection('all-services-container'); setTimeout(() => document.getElementById('super-saver').scrollIntoView({behavior: 'smooth', block: 'start'}), 100);">
+                        <div class="service-option-icon">
+                            <span style="color: #1e8f52; font-weight: 800; font-size: 24px; text-align: center; line-height: 1.1;">%</span>
+                        </div>
+                        <div class="service-option-text">Super saver deals</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('all-services-container'); setTimeout(() => document.getElementById('cleaning-stain').scrollIntoView({behavior: 'smooth', block: 'start'}), 100);">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Cleaning & stain protection">
+                        </div>
+                        <div class="service-option-text">Cleaning & stain protection</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('all-services-container'); setTimeout(() => document.getElementById('sofa-carpet').scrollIntoView({behavior: 'smooth', block: 'start'}), 100);">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Sofa & carpet">
+                        </div>
+                        <div class="service-option-text">Sofa & carpet</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('curtain')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Curtain">
+                        </div>
+                        <div class="service-option-text">Curtain</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('living-care')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Living room care">
+                        </div>
+                        <div class="service-option-text">Living room care</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('bedroom-care')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Bedroom care">
+                        </div>
+                        <div class="service-option-text">Bedroom care</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('mattress-bed')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Mattress & bed">
+                        </div>
+                        <div class="service-option-text">Mattress & bed</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('dining-table')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Dining table & chairs">
+                        </div>
+                        <div class="service-option-text">Dining table & chairs</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('other-furniture')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Other furniture">
+                        </div>
+                        <div class="service-option-text">Other furniture</div>
+                    </div>
+                    <div class="service-option" onclick="showSection('windows-fan')">
+                        <div class="service-option-icon">
+                            <img src="images/cleaning.jpg" alt="Windows & fan">
+                        </div>
+                        <div class="service-option-text">Windows & fan</div>
+                    </div>
+</div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+        <div class="kitchen-right">
+            
+            
+            <!-- Default Banner -->
+            <div id="default-banner" style="position: relative; border-radius: 16px; overflow: hidden; min-height: 450px; background: #000;">
+                <img src="images/cleaning.jpg" alt="Living & Bedroom Banner" class="kitchen-banner-img" style="opacity: 0.6; height: 450px;">
+                <div style="position: absolute; bottom: 120px; left: 30px;">
+                    <h2 style="color: #fff; font-size: 36px; font-weight: 700;">No stain tough to clean</h2>
+                </div>
+            </div>
+
+            <!-- Super Saver Deals Section -->
+            <div id="all-services-container" style="display: none;">
+<div id="super-saver" style="display: block; padding: 10px 0;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Super saver deals</h2>
+                
+                <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 30px; background: #2f4f4f; color: white; padding: 20px;">
+                    <div style="background: #1e8f52; display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 15px;">20% OFF</div>
+                    <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 15px; max-width: 60%;">2-visits sofa cleaning pack</h3>
+                    <div style="font-size: 14px;">Starts at <span style="text-decoration: line-through; margin-right: 5px;">₹398</span> <span style="font-size: 18px; font-weight: bold;">₹319</span> per visit</div>
+                    <img src="images/cleaning.jpg" style="position: absolute; right: 0; bottom: 0; width: 40%; height: 100%; object-fit: cover; opacity: 0.8;" alt="Dog on sofa">
+                </div>
+            </div>
+
+
+            <!-- Cleaning & Stain Protection Section -->
+            <div id="cleaning-stain" style="display: block; padding: 10px 0;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Cleaning & stain protection</h2>
+                
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px dashed #cbd5e1;">
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 15px; background: #eaddd3; height: 200px; display: flex; justify-content: center; align-items: center;">
+                        <img src="images/cleaning.jpg" alt="Sofa cleaning video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+                        <div style="width: 50px; height: 50px; background: rgba(0,0,0,0.5); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 2;">
+                            <i class="fa-solid fa-play" style="color: white; font-size: 20px; margin-left: 4px;"></i>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="flex: 1; padding-right: 20px;">
+                            <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Sofa cleaning & stain protection coating</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                                <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                                <span style="font-weight: 500; color: #475569;">4.84</span>
+                                <span style="text-decoration: underline dashed;">(56 reviews)</span>
+                            </div>
+                            <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                                Starts at ₹1,499 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                            </div>
+                        </div>
+                        <div>
+                            <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                        </div>
+                    </div>
+                    
+                    <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                        <li>Nano-coating that repels spills & resists stains up to 12 months</li>
+                        <li>Includes vacuuming & foam-based shampooing before coating</li>
+                    </ul>
+                    <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                </div>
+            </div>
+
+            <!-- Sofa & Carpet Section -->
+            <div id="sofa-carpet" style="display: block; padding: 10px 0;">
+                <h2 style="font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 25px; line-height: 1.2;">Sofa & carpet</h2>
+                
+                <!-- Card 1 -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px dashed #cbd5e1; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Fabric sofa cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.87</span>
+                            <span style="text-decoration: underline dashed;">(261K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹399 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Vacuuming & foam based shampooing for stain removal</li>
+                            <li>Recliner is not included & to be booked separately</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Fabric sofa cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px dashed #cbd5e1;">
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 15px; background: #eaddd3; height: 200px; display: flex; justify-content: center; align-items: center;">
+                        <img src="images/cleaning.jpg" alt="Sofa cleaning video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+                        <div style="width: 50px; height: 50px; background: rgba(0,0,0,0.5); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 2;">
+                            <i class="fa-solid fa-play" style="color: white; font-size: 20px; margin-left: 4px;"></i>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="flex: 1; padding-right: 20px;">
+                            <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Sofa cleaning & stain protection coating</h3>
+                            <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                                <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                                <span style="font-weight: 500; color: #475569;">4.84</span>
+                                <span style="text-decoration: underline dashed;">(56 reviews)</span>
+                            </div>
+                            <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                                Starts at ₹1,499 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                            </div>
+                        </div>
+                        <div>
+                            <button style="background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">Add</button>
+                        </div>
+                    </div>
+                    
+                    <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                        <li>Nano-coating that repels spills & resists stains up to 12 months</li>
+                        <li>Includes vacuuming & foam-based shampooing before coating</li>
+                    </ul>
+                    <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px dashed #cbd5e1; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Leather sofa cleaning & polishing</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.87</span>
+                            <span style="text-decoration: underline dashed;">(60K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹399 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Recliner is not included & to be booked separately</li>
+                            <li>Leather moisturization to enhance appearance</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Leather sofa cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px dashed #cbd5e1; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Sofa cum bed</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.88</span>
+                            <span style="text-decoration: underline dashed;">(58K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹399 <span style="color: #475569; font-weight: 400;">• 40 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Vacuuming & foam based shampooing for stain removal</li>
+                            <li>Applying shiner to wooden surface for a fresh look</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Sofa cum bed" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div style="padding-bottom: 30px; margin-bottom: 30px; display: flex; justify-content: space-between;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3 style="font-size: 18px; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Carpet cleaning</h3>
+                        <div style="display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; margin-bottom: 10px;">
+                            <i class="fa-solid fa-star" style="color: #6b21a8;"></i>
+                            <span style="font-weight: 500; color: #475569;">4.83</span>
+                            <span style="text-decoration: underline dashed;">(41K reviews)</span>
+                        </div>
+                        <div style="font-size: 13px; color: #0f172a; font-weight: 600; margin-bottom: 15px;">
+                            Starts at ₹399 <span style="color: #475569; font-weight: 400;">• 45 mins</span>
+                        </div>
+                        <ul style="margin: 0; padding: 0 0 0 18px; color: #475569; font-size: 13px; line-height: 1.6; margin-bottom: 15px;">
+                            <li>Vacuuming & foam based shampooing for stain removal</li>
+                            <li>2-3 hrs of dry time under the fan</li>
+                        </ul>
+                        <a href="#" style="color: #7c3aed; font-size: 14px; font-weight: 600; text-decoration: none;">View details</a>
+                    </div>
+                    <div style="position: relative; width: 140px; height: 140px; border-radius: 12px; overflow: visible;">
+                        <img src="images/cleaning.jpg" alt="Carpet cleaning" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <button style="position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); background: #fff; color: #7c3aed; font-weight: 600; padding: 8px 30px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 14px; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 2;">Add</button>
+                    </div>
+                </div>
+            </div>
+</div><!-- END all-services-container -->
+
+
+            </div>
+            
+        </div>
+    </main>
+
+        <script>
+        function showSection(sectionId) {
+            const allSections = ['default-banner', 'all-services-container'];
+            
+            allSections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = 'none';
+            });
+            
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) targetSection.style.display = 'block';
+        }
+    </script>
+    <script src="common.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
