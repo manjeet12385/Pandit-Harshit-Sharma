@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "build": "vite build && node inline-css.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.6.1",
