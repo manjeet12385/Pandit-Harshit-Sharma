@@ -57,15 +57,13 @@ const processHtmlFiles = (dir) => {
         return match;
       });
 
-      // 4. Lazy Load Google Translate Script
+      // 4. Fast Load Google Translate Script
       const lazyTranslate = `
 <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
-      var script = document.createElement('script');
-      script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-      document.body.appendChild(script);
-    }, 3000);
+  window.addEventListener('DOMContentLoaded', function() {
+    var script = document.createElement('script');
+    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    document.body.appendChild(script);
   });
 </script>`;
       html = html.replace(/<script type="text\/javascript" src="\/\/translate\.google\.com\/translate_a\/element\.js\?cb=googleTranslateElementInit" defer><\/script>/g, lazyTranslate);

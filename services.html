@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 
 <html lang="hi"><head>
+<script>
+  if (!document.cookie.includes('googtrans=')) {
+    document.cookie = "googtrans=/hi/en; path=/";
+  }
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>वैदिक पूजा एवं अनुष्ठान सेवाएं - पंडित हर्षित शर्मा | माँ बगलामुखी धाम नलखेड़ा</title>
@@ -78,9 +84,9 @@
 </head><body class="bg-surface font-body-md text-on-surface overflow-x-hidden"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(180,83,9,0.08)]"><div class="bg-secondary text-on-secondary px-gutter-mobile md:px-gutter-desktop py-space-xs text-center"><div class="max-w-max-width-content mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 md:gap-space-sm font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed"></span></span><div class="flex flex-col items-start leading-tight"><span>महाभारत कालीन विश्व प्रसिद्ध सिद्धपीठ • नलखेड़ा (म.प्र.)</span><span class="text-[10px] text-secondary-fixed">पंडित हर्षित शर्मा</span></div></div><div class="hidden md:flex items-center gap-space-md"><span class="text-secondary-fixed">त्रिशूल-पीताम्बरा तंत्र पीठ</span><span>•</span><span>24x7 मुफ्त सलाह एवं संकल्प परामर्श</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px]">call</span><span class="font-label-md text-label-md tracking-wider">+91 87690 84789</span></div><div class="flex items-center justify-center gap-space-xs"><span class="material-symbols-outlined text-[13px]">person</span><span class="font-label-sm text-label-sm tracking-wider">पंडित हर्षित शर्मा</span></div></div></div><div class="h-20 max-w-max-width-content mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between gap-2 md:gap-space-md"><div class="flex items-center gap-2 md:gap-space-md"><img src="./logo.webp" alt="Maa Baglamukhi Logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-[0_2px_10px_rgba(141,75,0,0.25)] border-2 border-primary-container"><div class="flex flex-col"><span class="font-headline-sm text-[14px] sm:text-base md:text-headline-sm text-primary tracking-tight whitespace-nowrap">पंडित हर्षित शर्मा</span><span class="font-label-sm text-[10px] md:text-label-sm text-secondary uppercase tracking-widest hidden md:block">वैदिक पुरोहित, माँ बगलामुखी धाम नलखेड़ा</span></div></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" data-path="home" href="index.html">होम</a><a aria-current="page" class="transition-colors duration-200 text-primary font-bold border-b-2 border-primary pb-1" href="services.html">सेवाएं</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="gallery.html">गैलरी</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="locations.html">सभी शहर</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="contact.html">संपर्क</a></nav>
 <div id="google_translate_element" class="hidden"></div>
 <div class="ml-auto md:ml-4 flex items-center bg-[#3a0a10] rounded-full p-1 shadow-inner relative cursor-pointer w-[120px] h-[32px] md:w-[160px] md:h-[42px]" onclick="toggleLanguage()">
-  <div id="lang-active-bg" class="absolute bg-yellow-400 rounded-full transition-all duration-300 shadow-sm h-[24px] md:h-[34px]" style="width: calc(50% - 4px); left: 4px;"></div>
-  <button id="btn-hi" class="relative z-10 w-1/2 text-center text-[12px] md:text-[15px] tracking-wide font-bold text-black transition-colors duration-300">हिन्दी</button>
-  <button id="btn-en" class="relative z-10 w-1/2 text-center text-[12px] md:text-[15px] tracking-wide font-bold text-white transition-colors duration-300 drop-shadow-md">English</button>
+  <div id="lang-active-bg" class="absolute bg-yellow-400 rounded-full transition-all duration-300 shadow-sm h-[24px] md:h-[34px]" style="width: calc(50% - 4px); left: calc(50%);"></div>
+  <button id="btn-hi" class="relative z-10 w-1/2 text-center text-[12px] md:text-[15px] tracking-wide font-bold text-white transition-colors duration-300">हिन्दी</button>
+  <button id="btn-en" class="relative z-10 w-1/2 text-center text-[12px] md:text-[15px] tracking-wide font-bold text-black transition-colors duration-300 drop-shadow-md">English</button>
 </div>
 <button id="mobile-menu-btn" class="md:hidden text-primary focus:outline-none p-1 ml-2">
   <span class="material-symbols-outlined text-[28px]">menu</span>
@@ -1141,36 +1147,56 @@
     }
   }, 10000); // 10 seconds
 </script>
+
+
 <script>
 function toggleLanguage() {
-  const isEnglish = document.cookie.includes('googtrans=/hi/en');
-  if (isEnglish) {
-    document.cookie = "googtrans=/hi/hi; path=/; domain=" + window.location.hostname;
-    document.cookie = "googtrans=/hi/hi; path=/";
-  } else {
-    document.cookie = "googtrans=/hi/en; path=/; domain=" + window.location.hostname;
+  const isHindi = document.cookie.includes('googtrans=/hi/hi');
+  if (isHindi) {
     document.cookie = "googtrans=/hi/en; path=/";
+    if (window.location.hostname && !window.location.hostname.includes('localhost')) {
+      document.cookie = "googtrans=/hi/en; path=/; domain=" + window.location.hostname;
+    }
+  } else {
+    document.cookie = "googtrans=/hi/hi; path=/";
+    if (window.location.hostname && !window.location.hostname.includes('localhost')) {
+      document.cookie = "googtrans=/hi/hi; path=/; domain=" + window.location.hostname;
+    }
   }
   window.location.reload();
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  const isEnglish = document.cookie.includes('googtrans=/hi/en');
+  const isHindi = document.cookie.includes('googtrans=/hi/hi');
   const bg = document.getElementById('lang-active-bg');
   const btnHi = document.getElementById('btn-hi');
   const btnEn = document.getElementById('btn-en');
-  if (isEnglish && bg && btnHi && btnEn) {
-    bg.style.left = 'calc(50%)';
-    btnEn.classList.remove('text-white');
-    btnEn.classList.add('text-black');
-    btnHi.classList.remove('text-black');
-    btnHi.classList.add('text-white');
+  if (bg && btnHi && btnEn) {
+    if (isHindi) {
+      bg.style.left = '4px';
+      btnHi.classList.remove('text-white');
+      btnHi.classList.add('text-black');
+      btnEn.classList.remove('text-black');
+      btnEn.classList.add('text-white');
+    } else {
+      bg.style.left = 'calc(50%)';
+      btnEn.classList.remove('text-white');
+      btnEn.classList.add('text-black');
+      btnHi.classList.remove('text-black');
+      btnHi.classList.add('text-white');
+    }
   }
 });
+
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'hi', includedLanguages: 'hi,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  new google.translate.TranslateElement({
+    pageLanguage: 'hi',
+    includedLanguages: 'hi,en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
 </body></html>
 
