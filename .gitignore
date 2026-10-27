@@ -2,3 +2,5 @@ node_modules/
 .DS_Store
 .vercel/
 *.mp4
+__pycache__/
+*.pyc

@@ -76,5 +76,13 @@ const processHtmlFiles = (dir) => {
   }
 };
 
+// Copy sitemap.xml and robots.txt to dist
+if (fs.existsSync(path.join(__dirname, 'sitemap.xml'))) {
+  fs.copyFileSync(path.join(__dirname, 'sitemap.xml'), path.join(distPath, 'sitemap.xml'));
+}
+if (fs.existsSync(path.join(__dirname, 'robots.txt'))) {
+  fs.copyFileSync(path.join(__dirname, 'robots.txt'), path.join(distPath, 'robots.txt'));
+}
+
 processHtmlFiles(distPath);
 console.log('Hardcore optimizations applied successfully.');
