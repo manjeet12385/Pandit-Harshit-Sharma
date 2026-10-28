@@ -58,3 +58,22 @@ body {
   box-shadow: none !important;
 }
 
+/* Prevent Google Translate from translating or altering Material Symbols */
+.material-symbols-outlined,
+.material-symbols,
+.material-icons,
+[class*="material-symbols"],
+.notranslate {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clean antialiasing for translated Hindi text */
+.translated-ltr,
+.translated-rtl {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
