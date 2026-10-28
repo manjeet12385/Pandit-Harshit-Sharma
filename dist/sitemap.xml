@@ -6,54 +6,9 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.baglamukhi-puja.in/index.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.baglamukhi-puja.in/services.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/shatru-vijay-puja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/court-case-puja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/vyapar-vriddhi-puja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/grah-shanti-puja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/vivah-badha-puja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/swasthya-raksha-puja.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/online-puja-booking.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.baglamukhi-puja.in/baglamukhi-kavach.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.baglamukhi-puja.in/gallery.html</loc>
@@ -69,6 +24,46 @@
     <loc>https://www.baglamukhi-puja.in/locations.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/online-puja-booking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/court-case-puja.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/shatru-vijay-puja.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/vyapar-vriddhi-puja.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/grah-shanti-puja.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/baglamukhi-kavach.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/swasthya-raksha-puja.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.baglamukhi-puja.in/vivah-badha-puja.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.baglamukhi-puja.in/puja-in/nalkheda.html</loc>
