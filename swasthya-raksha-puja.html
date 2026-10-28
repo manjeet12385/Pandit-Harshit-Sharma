@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <script>
-  if (!document.cookie.includes('googtrans=')) {
-    document.cookie = "googtrans=/hi/en; path=/";
+  if (document.cookie.includes('googtrans=/hi/en')) {
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   }
 </script>
 
@@ -336,23 +336,23 @@ function toggleMobileMenu(e) {
 window.toggleMobileMenu = toggleMobileMenu;
 
 function toggleLanguage() {
-  const isHindi = document.cookie.includes('googtrans=/hi/hi');
+  const isHindi = document.cookie.includes('googtrans=/en/hi');
   if (isHindi) {
-    document.cookie = "googtrans=/hi/en; path=/";
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     if (window.location.hostname && !window.location.hostname.includes('localhost')) {
-      document.cookie = "googtrans=/hi/en; path=/; domain=" + window.location.hostname;
+      document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
     }
   } else {
-    document.cookie = "googtrans=/hi/hi; path=/";
+    document.cookie = "googtrans=/en/hi; path=/";
     if (window.location.hostname && !window.location.hostname.includes('localhost')) {
-      document.cookie = "googtrans=/hi/hi; path=/; domain=" + window.location.hostname;
+      document.cookie = "googtrans=/en/hi; path=/; domain=" + window.location.hostname;
     }
   }
   window.location.reload();
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  const isHindi = document.cookie.includes('googtrans=/hi/hi');
+  const isHindi = document.cookie.includes('googtrans=/en/hi');
   const bg = document.getElementById('lang-active-bg');
   const btnHi = document.getElementById('btn-hi');
   const btnEn = document.getElementById('btn-en');
@@ -375,9 +375,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
-    pageLanguage: 'hi',
+    pageLanguage: 'en',
     includedLanguages: 'hi,en',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE, 
+    autoDisplay: false
+  }, 'google_translate_element');
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
