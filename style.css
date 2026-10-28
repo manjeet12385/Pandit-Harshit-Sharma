@@ -25,3 +25,36 @@
 .hide-phone-number {
   clip-path: polygon(0 0,  0,  , 45% , 45% 82%, 0 82%);
 }
+
+/* Hide Google Translate Top Banner & Tooltip */
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.skiptranslate,
+.skiptranslate iframe,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0px !important;
+  width: 0px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+

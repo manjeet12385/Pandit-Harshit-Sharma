@@ -757,14 +757,14 @@ def generate_city_html(city_info, state_sibling_cities):
   <title>{c_hi} में पंडित हर्षित शर्मा | माँ बगलामुखी अनुष्ठान, हवन एवं ज्योतिष सेवा</title>
   <meta name="description" content="{c_hi} ({s_hi}) में श्रेष्ठ वैदिक पुरोहित पंडित हर्षित शर्मा। माँ बगलामुखी धाम नलखेड़ा से लाइव संकल्प पूजा, शत्रु विजय, ग्रह शांति व व्यापार वृद्धि हवन। परामर्श हेतु संपर्क करें: +91 87690 84789."/>
   <meta name="keywords" content="{c_hi} में पंडित जी, Pandit in {c_en}, Best Pandit in {c_en}, Maa Baglamukhi Puja in {c_en}, Havan in {c_en}, {c_hi} Puja Booking, Nalkheda Dham Pandit"/>
-  <link rel="canonical" href="https://panditharshitsharma.com/puja-in/{slug}.html"/>
+  <link rel="canonical" href="https://www.baglamukhi-puja.in/puja-in/{slug}.html"/>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://panditharshitsharma.com/puja-in/{slug}.html"/>
+  <meta property="og:url" content="https://www.baglamukhi-puja.in/puja-in/{slug}.html"/>
   <meta property="og:title" content="{c_hi} में पंडित हर्षित शर्मा | माँ बगलामुखी धाम नलखेड़ा पूजा सेवा"/>
   <meta property="og:description" content="{c_hi} के यजमानों के लिए माँ बगलामुखी सिद्धपीठ नलखेड़ा से विशेष लाइव वीडियो संकल्प पूजा, ग्रह शांति व शत्रु निवारण हवन।"/>
-  <meta property="og:image" content="https://panditharshitsharma.com/logo.webp"/>
+  <meta property="og:image" content="https://www.baglamukhi-puja.in/logo.webp"/>
 
   <link rel="icon" type="image/jpeg" href="../logo.webp"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -781,7 +781,7 @@ def generate_city_html(city_info, state_sibling_cities):
     "@context": "https://schema.org",
     "@type": "PlaceOfWorship",
     "name": "पंडित हर्षित शर्मा - माँ बगलामुखी पूजा सेवा {c_hi}",
-    "image": "https://panditharshitsharma.com/logo.webp",
+    "image": "https://www.baglamukhi-puja.in/logo.webp",
     "telephone": "+918769084789",
     "address": {{
       "@type": "PostalAddress",
@@ -789,7 +789,7 @@ def generate_city_html(city_info, state_sibling_cities):
       "addressRegion": "{s_en}",
       "addressCountry": "IN"
     }},
-    "url": "https://panditharshitsharma.com/puja-in/{slug}.html",
+    "url": "https://www.baglamukhi-puja.in/puja-in/{slug}.html",
     "priceRange": "₹₹",
     "description": "{c_hi} ({s_hi}) के श्रद्धालुओं के लिए माँ बगलामुखी धाम नलखेड़ा से विशेष वैदिक अनुष्ठान एवं लाइव संकल्प पूजा सेवाएं।"
   }}
@@ -803,19 +803,19 @@ def generate_city_html(city_info, state_sibling_cities):
         "@type": "ListItem",
         "position": 1,
         "name": "होम",
-        "item": "https://panditharshitsharma.com/"
+        "item": "https://www.baglamukhi-puja.in/"
       }},
       {{
         "@type": "ListItem",
         "position": 2,
         "name": "सभी शहर",
-        "item": "https://panditharshitsharma.com/locations.html"
+        "item": "https://www.baglamukhi-puja.in/locations.html"
       }},
       {{
         "@type": "ListItem",
         "position": 3,
         "name": "{c_hi} में पूजा",
-        "item": "https://panditharshitsharma.com/puja-in/{slug}.html"
+        "item": "https://www.baglamukhi-puja.in/puja-in/{slug}.html"
       }}
     ]
   }}
@@ -1398,12 +1398,12 @@ def generate_master_locations_html():
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>भारत के 36 राज्यों व 446+ शहरों में पूजा सेवाएं | पंडित हर्षित शर्मा नलखेड़ा धाम</title>
   <meta name="description" content="पंडित हर्षित शर्मा जी द्वारा भारत के सभी राज्यों (मध्य प्रदेश, उत्तर प्रदेश, राजस्थान, दिल्ली, महाराष्ट्र, गुजरात आदि) में माँ बगलामुखी धाम नलखेड़ा से विशेष लाइव संकल्प व हवन सेवा।"/>
-  <link rel="canonical" href="https://panditharshitsharma.com/locations.html"/>
+  <link rel="canonical" href="https://www.baglamukhi-puja.in/locations.html"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://panditharshitsharma.com/locations.html"/>
+  <meta property="og:url" content="https://www.baglamukhi-puja.in/locations.html"/>
   <meta property="og:title" content="भारत के 36 राज्यों व 446+ शहरों में पूजा सेवाएं | पंडित हर्षित शर्मा"/>
   <meta property="og:description" content="माँ बगलामुखी धाम नलखेड़ा से भारत के सभी राज्यों व 446+ शहरों में विशेष लाइव संकल्प व हवन सेवा।"/>
-  <meta property="og:image" content="https://panditharshitsharma.com/logo.webp"/>
+  <meta property="og:image" content="https://www.baglamukhi-puja.in/logo.webp"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <link rel="icon" type="image/jpeg" href="./logo.webp"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -1420,9 +1420,9 @@ def generate_master_locations_html():
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "पंडित हर्षित शर्मा - अखिल भारतीय पूजा निर्देशिका",
-    "url": "https://panditharshitsharma.com/locations.html",
+    "url": "https://www.baglamukhi-puja.in/locations.html",
     "telephone": "+918769084789",
-    "image": "https://panditharshitsharma.com/logo.webp",
+    "image": "https://www.baglamukhi-puja.in/logo.webp",
     "description": "भारत के सभी 36 राज्यों व 446+ शहरों में माँ बगलामुखी धाम नलखेड़ा से विशेष लाइव संकल्प एवं हवन सेवाएं।"
   }}
   </script>
@@ -1557,11 +1557,11 @@ def generate_sitemap_xml():
         ('locations.html', '0.9', 'daily')
     ]
     for page, priority, freq in core_pages:
-        xml += f'  <url>\n    <loc>https://panditharshitsharma.com/{page}</loc>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>\n'
+        xml += f'  <url>\n    <loc>https://www.baglamukhi-puja.in/{page}</loc>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>\n'
 
     # City pages
     for city in all_cities_flat:
-        xml += f'  <url>\n    <loc>https://panditharshitsharma.com/puja-in/{city["slug"]}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+        xml += f'  <url>\n    <loc>https://www.baglamukhi-puja.in/puja-in/{city["slug"]}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
 
     xml += '</urlset>'
     return xml
@@ -1576,7 +1576,7 @@ def generate_robots_txt():
     return '''User-agent: *
 Allow: /
 
-Sitemap: https://panditharshitsharma.com/sitemap.xml
+Sitemap: https://www.baglamukhi-puja.in/sitemap.xml
 '''
 
 with open(os.path.join(os.path.dirname(__file__), 'robots.txt'), 'w', encoding='utf-8') as f:

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://panditharshitsharma.com/sitemap.xml
+Sitemap: https://www.baglamukhi-puja.in/sitemap.xml
