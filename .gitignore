@@ -4,3 +4,6 @@ node_modules/
 *.mp4
 __pycache__/
 *.pyc
+.backup_unused/
+scratch/
+
