@@ -744,7 +744,7 @@ def generate_city_html(city_info, state_sibling_cities):
     for sib in state_sibling_cities:
         if sib['slug'] != slug:
             sibling_links_html += f'''
-            <a href="{sib['slug']}.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#f8f3e8] hover:bg-[#ffdcc3] text-[#8d4b00] text-xs font-semibold border border-[#dbc2b0] transition-colors">
+            <a href="/puja-in/{sib['slug']}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#f8f3e8] hover:bg-[#ffdcc3] text-[#8d4b00] text-xs font-semibold border border-[#dbc2b0] transition-colors">
               <span class="material-symbols-outlined text-[14px]">location_on</span>
               <span>{sib['city_en']}</span>
             </a>'''
@@ -752,16 +752,25 @@ def generate_city_html(city_info, state_sibling_cities):
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HS86TV1SNC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HS86TV1SNC');
+  </script>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Best Pandit in {c_en} | Maa Baglamukhi Puja & Havan Booking in {c_en} - Pandit Harshit Sharma</title>
   <meta name="description" content="Looking for the best pandit in {c_en}? Book authentic Vedic Maa Baglamukhi Puja & Havan in {c_en} ({s_en}) with Pandit Harshit Sharma from Nalkheda Dham. Live video sankalp, court case victory, business growth. Call: +91 87690 84789."/>
   <meta name="keywords" content="Best Pandit in {c_en}, Pandit in {c_en}, Havan Booking in {c_en}, Maa Baglamukhi Puja in {c_en}, Famous Pandit in {c_en}, Puja Booking {c_en}, Pandit Harshit Sharma Nalkheda"/>
-  <link rel="canonical" href="https://www.baglamukhi-puja.in/puja-in/{slug}.html"/>
+  <link rel="canonical" href="https://www.baglamukhi-puja.in/puja-in/{slug}"/>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.baglamukhi-puja.in/puja-in/{slug}.html"/>
+  <meta property="og:url" content="https://www.baglamukhi-puja.in/puja-in/{slug}"/>
   <meta property="og:title" content="Best Pandit in {c_en} | Maa Baglamukhi Puja & Havan Booking - Pandit Harshit Sharma"/>
   <meta property="og:description" content="Authentic Vedic Maa Baglamukhi Puja and Havan for devotees in {c_en} via live video sankalp from Siddhapeeth Nalkheda Dham with Pandit Harshit Sharma."/>
   <meta property="og:image" content="https://www.baglamukhi-puja.in/logo.webp"/>
@@ -779,19 +788,26 @@ def generate_city_html(city_info, state_sibling_cities):
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
-    "@type": "PlaceOfWorship",
-    "name": "Pandit Harshit Sharma - Best Pandit in {c_en} | Maa Baglamukhi Puja Service",
-    "image": "https://www.baglamukhi-puja.in/logo.webp",
-    "telephone": "+918769084789",
-    "address": {{
-      "@type": "PostalAddress",
-      "addressLocality": "{c_en}",
-      "addressRegion": "{s_en}",
-      "addressCountry": "IN"
+    "@type": "Service",
+    "name": "Maa Baglamukhi Puja & Havan Service for {c_en} - Pandit Harshit Sharma",
+    "serviceType": "Vedic Anushthan & Live Sankalp Havan",
+    "provider": {{
+      "@type": "Person",
+      "name": "Pandit Harshit Sharma",
+      "telephone": "+918769084789",
+      "url": "https://www.baglamukhi-puja.in/",
+      "address": {{
+        "@type": "PostalAddress",
+        "streetAddress": "Lakhundar River Bank, Nalkheda",
+        "addressLocality": "Nalkheda",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "465445",
+        "addressCountry": "IN"
+      }}
     }},
-    "url": "https://www.baglamukhi-puja.in/puja-in/{slug}.html",
-    "priceRange": "₹₹",
-    "description": "Authentic Vedic Maa Baglamukhi Puja, Havan, and astrological consultation for devotees in {c_en} ({s_en}) performed by Pandit Harshit Sharma from Maa Baglamukhi Dham Nalkheda."
+    "areaServed": "{c_en}",
+    "url": "https://www.baglamukhi-puja.in/puja-in/{slug}",
+    "description": "Authentic Vedic Maa Baglamukhi Puja, Havan, and astrological consultation for devotees in {c_en} ({s_en}) performed by Pandit Harshit Sharma from Maa Baglamukhi Dham Nalkheda via live video sankalp."
   }}
   </script>
   <script type="application/ld+json">
@@ -809,13 +825,13 @@ def generate_city_html(city_info, state_sibling_cities):
         "@type": "ListItem",
         "position": 2,
         "name": "All Cities",
-        "item": "https://www.baglamukhi-puja.in/locations.html"
+        "item": "https://www.baglamukhi-puja.in/locations"
       }},
       {{
         "@type": "ListItem",
         "position": 3,
         "name": "Puja in {c_en}",
-        "item": "https://www.baglamukhi-puja.in/puja-in/{slug}.html"
+        "item": "https://www.baglamukhi-puja.in/puja-in/{slug}"
       }}
     ]
   }}
@@ -859,10 +875,10 @@ def generate_city_html(city_info, state_sibling_cities):
 
       <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[#554336]">
         <a class="hover:text-[#8d4b00] transition-colors" href="/">Home</a>
-        <a class="hover:text-[#8d4b00] transition-colors" href="../services.html">Services</a>
-        <a class="hover:text-[#8d4b00] transition-colors" href="../gallery.html">Gallery</a>
-        <a class="text-[#8d4b00] font-bold border-b-2 border-[#8d4b00] pb-0.5" href="../locations.html">All Cities ({s_en})</a>
-        <a class="hover:text-[#8d4b00] transition-colors" href="../contact.html">Contact</a>
+        <a class="hover:text-[#8d4b00] transition-colors" href="/services">Services</a>
+        <a class="hover:text-[#8d4b00] transition-colors" href="/gallery">Gallery</a>
+        <a class="text-[#8d4b00] font-bold border-b-2 border-[#8d4b00] pb-0.5" href="/locations">All Cities ({s_en})</a>
+        <a class="hover:text-[#8d4b00] transition-colors" href="/contact">Contact</a>
       </nav>
 
       <div class="flex items-center gap-2">
@@ -870,7 +886,7 @@ def generate_city_html(city_info, state_sibling_cities):
           <span class="material-symbols-outlined text-[16px]">call</span>
           <span>Consult Now</span>
         </a>
-        <a href="../locations.html" class="inline-flex md:hidden items-center gap-1 px-3 py-1.5 rounded-full bg-[#f8f3e8] border border-[#dbc2b0] text-[#8d4b00] text-xs font-bold">
+        <a href="/locations" class="inline-flex md:hidden items-center gap-1 px-3 py-1.5 rounded-full bg-[#f8f3e8] border border-[#dbc2b0] text-[#8d4b00] text-xs font-bold">
           <span class="material-symbols-outlined text-[15px]">explore</span>
           <span>Cities</span>
         </a>
@@ -886,7 +902,7 @@ def generate_city_html(city_info, state_sibling_cities):
       <div class="max-w-[1200px] mx-auto flex items-center gap-2 text-xs text-[#554336]">
         <a href="/" class="hover:text-[#8d4b00]">Home</a>
         <span>/</span>
-        <a href="../locations.html" class="hover:text-[#8d4b00]">Locations Directory</a>
+        <a href="/locations" class="hover:text-[#8d4b00]">Locations Directory</a>
         <span>/</span>
         <span class="text-[#554336]">{s_en}</span>
         <span>/</span>
@@ -1243,7 +1259,7 @@ def generate_city_html(city_info, state_sibling_cities):
           <h3 class="font-['Noto_Serif',serif] font-bold text-base md:text-lg text-[#8d4b00]">
             Other Major Cities for Puja Services in {s_en}:
           </h3>
-          <a href="../locations.html" class="text-xs font-bold text-[#a53936] hover:underline flex items-center gap-1">
+          <a href="/locations" class="text-xs font-bold text-[#a53936] hover:underline flex items-center gap-1">
             <span>View All 36 States & Regions</span>
             <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
           </a>
@@ -1276,11 +1292,11 @@ def generate_city_html(city_info, state_sibling_cities):
         <div class="flex flex-col gap-2.5">
           <span class="font-['Noto_Serif',serif] font-bold text-sm text-[#8d4b00]">Key Services</span>
           <div class="flex flex-col gap-1.5 text-xs text-[#554336]">
-            <a class="hover:text-[#8d4b00]" href="../services.html">Maa Baglamukhi Anushthan</a>
-            <a class="hover:text-[#8d4b00]" href="../court-case-puja.html">Court Case Victory Havan</a>
-            <a class="hover:text-[#8d4b00]" href="../grah-shanti-puja.html">Navgrah Shanti & Kaal Sarp</a>
-            <a class="hover:text-[#8d4b00]" href="../vyapar-vriddhi-puja.html">Debt Relief & Business Puja</a>
-            <a class="hover:text-[#8d4b00]" href="../locations.html">Locations Directory (36 States)</a>
+            <a class="hover:text-[#8d4b00]" href="/services">Maa Baglamukhi Anushthan</a>
+            <a class="hover:text-[#8d4b00]" href="/court-case-puja">Court Case Victory Havan</a>
+            <a class="hover:text-[#8d4b00]" href="/grah-shanti-puja">Navgrah Shanti & Kaal Sarp</a>
+            <a class="hover:text-[#8d4b00]" href="/vyapar-vriddhi-puja">Debt Relief & Business Puja</a>
+            <a class="hover:text-[#8d4b00]" href="/locations">Locations Directory (36 States)</a>
           </div>
         </div>
 
@@ -1369,7 +1385,7 @@ def generate_master_locations_html():
             if slug in city_slug_map and city_slug_map[slug]['state_en'] != s_en:
                 slug = f"{base_slug}-{slugify(s_en)}"
             cities_pills_html += f'''
-            <a href="puja-in/{slug}.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white hover:bg-[#ffdcc3] text-[#8d4b00] text-xs font-semibold border border-[#dbc2b0] shadow-sm hover:shadow transition-all">
+            <a href="/puja-in/{slug}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white hover:bg-[#ffdcc3] text-[#8d4b00] text-xs font-semibold border border-[#dbc2b0] shadow-sm hover:shadow transition-all">
               <span class="material-symbols-outlined text-[14px]">location_on</span>
               <span>{c_en}</span>
             </a>'''
@@ -1394,14 +1410,23 @@ def generate_master_locations_html():
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HS86TV1SNC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HS86TV1SNC');
+  </script>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>All 446+ Cities & 36 States Directory | Best Pandit in Nalkheda - Pandit Harshit Sharma</title>
   <meta name="description" content="Explore Vedic Maa Baglamukhi Puja and Havan services across all 36 Indian states and 446+ cities with Pandit Harshit Sharma from Maa Baglamukhi Dham Nalkheda."/>
   <meta name="keywords" content="Best Pandit in Nalkheda, Pandit in India, All India Puja Services, Maa Baglamukhi Puja, Havan Booking, Pandit Harshit Sharma"/>
-  <link rel="canonical" href="https://www.baglamukhi-puja.in/locations.html"/>
+  <link rel="canonical" href="https://www.baglamukhi-puja.in/locations"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.baglamukhi-puja.in/locations.html"/>
+  <meta property="og:url" content="https://www.baglamukhi-puja.in/locations"/>
   <meta property="og:title" content="All 446+ Cities Directory | Best Pandit in Nalkheda - Pandit Harshit Sharma"/>
   <meta property="og:description" content="Explore Vedic Maa Baglamukhi Puja and Havan services across 446+ cities with Pandit Harshit Sharma from Maa Baglamukhi Dham Nalkheda."/>
   <meta property="og:image" content="https://www.baglamukhi-puja.in/logo.webp"/>
@@ -1421,7 +1446,7 @@ def generate_master_locations_html():
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Pandit Harshit Sharma - All India Puja Directory",
-    "url": "https://www.baglamukhi-puja.in/locations.html",
+    "url": "https://www.baglamukhi-puja.in/locations",
     "telephone": "+918769084789",
     "image": "https://www.baglamukhi-puja.in/logo.webp",
     "description": "Authentic Vedic Maa Baglamukhi Puja and Havan services across all 36 Indian states and 446+ cities from Maa Baglamukhi Dham Nalkheda."
@@ -1465,10 +1490,10 @@ def generate_master_locations_html():
 
       <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[#554336]">
         <a class="hover:text-[#8d4b00] transition-colors" href="/">Home</a>
-        <a class="hover:text-[#8d4b00] transition-colors" href="services.html">Services</a>
-        <a class="hover:text-[#8d4b00] transition-colors" href="gallery.html">Gallery</a>
-        <a class="text-[#8d4b00] font-bold border-b-2 border-[#8d4b00] pb-0.5" href="locations.html">Locations Directory</a>
-        <a class="hover:text-[#8d4b00] transition-colors" href="contact.html">Contact</a>
+        <a class="hover:text-[#8d4b00] transition-colors" href="/services">Services</a>
+        <a class="hover:text-[#8d4b00] transition-colors" href="/gallery">Gallery</a>
+        <a class="text-[#8d4b00] font-bold border-b-2 border-[#8d4b00] pb-0.5" href="/locations">Locations Directory</a>
+        <a class="hover:text-[#8d4b00] transition-colors" href="/contact">Contact</a>
       </nav>
 
       <a href="tel:+918769084789" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#8d4b00] text-white text-xs font-bold shadow-md hover:bg-[#b15f00] transition-all">
@@ -1551,18 +1576,18 @@ def generate_sitemap_xml():
     # Core pages
     core_pages = [
         ('', '1.0', 'daily'),
-        ('services.html', '0.9', 'weekly'),
-        ('gallery.html', '0.8', 'weekly'),
-        ('contact.html', '0.8', 'monthly'),
-        ('locations.html', '0.9', 'daily'),
-        ('online-puja-booking.html', '0.8', 'monthly'),
-        ('court-case-puja.html', '0.8', 'monthly'),
-        ('shatru-vijay-puja.html', '0.8', 'monthly'),
-        ('vyapar-vriddhi-puja.html', '0.8', 'monthly'),
-        ('grah-shanti-puja.html', '0.8', 'monthly'),
-        ('baglamukhi-kavach.html', '0.8', 'monthly'),
-        ('swasthya-raksha-puja.html', '0.8', 'monthly'),
-        ('vivah-badha-puja.html', '0.8', 'monthly')
+        ('services', '0.9', 'weekly'),
+        ('gallery', '0.8', 'weekly'),
+        ('contact', '0.8', 'monthly'),
+        ('locations', '0.9', 'daily'),
+        ('online-puja-booking', '0.8', 'monthly'),
+        ('court-case-puja', '0.8', 'monthly'),
+        ('shatru-vijay-puja', '0.8', 'monthly'),
+        ('vyapar-vriddhi-puja', '0.8', 'monthly'),
+        ('grah-shanti-puja', '0.8', 'monthly'),
+        ('baglamukhi-kavach', '0.8', 'monthly'),
+        ('swasthya-raksha-puja', '0.8', 'monthly'),
+        ('vivah-badha-puja', '0.8', 'monthly')
     ]
     for page, priority, freq in core_pages:
         loc = f"https://www.baglamukhi-puja.in/{page}" if page else "https://www.baglamukhi-puja.in/"
@@ -1570,7 +1595,7 @@ def generate_sitemap_xml():
 
     # City pages
     for city in all_cities_flat:
-        xml += f'  <url>\n    <loc>https://www.baglamukhi-puja.in/puja-in/{city["slug"]}.html</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
+        xml += f'  <url>\n    <loc>https://www.baglamukhi-puja.in/puja-in/{city["slug"]}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n'
 
     xml += '</urlset>'
     return xml
